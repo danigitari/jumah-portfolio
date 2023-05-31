@@ -29,7 +29,7 @@ function Home() {
               Contact
             </li>
           </div>
-          <div className="flex text-2xl font-bold py-2 ">
+          <div className="flex  md:hidden text-2xl font-bold py-2 ">
             {" "}
             <AiOutlineMenu />{" "}
           </div>
@@ -43,10 +43,10 @@ function Home() {
         </div>
         <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
       </div>
-      <div className="absolute bottom-4 pl-5 md:pl-20 text-white text-2xl md:text-5xl bg-[#181822] font-bold w-full  ">
+      <div className="absolute bottom-4 md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-4xl bg-[#181822] font-bold w-full p-10 ">
         Hello <div className="py-2"> I'm James Juma Sindani.</div>
         <h1 className="font-bold text-white">
-          <div className="text-2xl md:text-5xl  text-bold ">
+          <div className="text-2xl md:text-4xl  text-bold ">
             {/* Style will be inherited from the parent element */}
             <Typewriter
               words={["SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}

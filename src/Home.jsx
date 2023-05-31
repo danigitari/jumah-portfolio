@@ -39,11 +39,15 @@ function Home() {
          "
         >
           <div className=" hidden md:flex w-full h-full bg-[#000006]"> </div>
-          <img src="jumah3.png" alt="" className="flex h-full right-0" />
+          <img
+            src="jumah3.png"
+            alt=""
+            className="flex h-full right-0 pt-0 md:pt-10 bg-[#000006]"
+          />
         </div>
         <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
       </div>
-      <div className="absolute bottom-4 md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-4xl bg-[#181822] font-bold w-full p-10 ">
+      <div className="absolute bottom-4 md:top-44 md:bg-transparent pl-5 w-1/2 md:pl-20 text-white text-2xl md:text-4xl bg-[#181822] font-bold p-10 ">
         Hello <div className="py-2"> I'm James Juma Sindani.</div>
         <h1 className="font-bold text-white">
           <div className="text-2xl md:text-4xl  text-bold ">
@@ -58,6 +62,8 @@ function Home() {
               delaySpeed={1000}
             />
           </div>{" "}
+          
+          lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
         </h1>
       </div>
     </>

@@ -7,7 +7,7 @@ import "./index.css";
 function Home() {
   return (
     <>
-      <div className="max-w-screen">
+      <div className="max-w-screen bg-[#000007] h-full relative">
         <div className=" h-screen flex  justify-between relative">
           <div className="absolute text-white flex justify-between z-20 w-full py-5 pr-5 md:pr-20 bg-[#000007] md:bg-transparent">
             <div className="text-lg md:text-3xl font-bold py-2 pl-5  md:pl-20 ">
@@ -39,7 +39,7 @@ function Home() {
             className=" hidden md:flex absolute right-0 h-screen bg-no-repeat bg-contain w-screen
          "
           >
-            <div className=" hidden md:flex w-full h-full bg-[#000006]"> </div>
+            <div className=" hidden md:flex w-full h-full bg-[#000006] "> </div>
             <img
               src="jumah3.png"
               alt=""
@@ -48,10 +48,10 @@ function Home() {
           </div>
           <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
         </div>
-        <div className="absolute bottom-4 md:top-44 md:bg-transparent pl-5 w-1/2 md:pl-20 text-white text-2xl md:text-[44px] leading-10 bg-[#181822] font-bold p-10 ">
-          Hello <div className="py-2 leading-10"> I'm James Juma Sindani.</div>
-          <h1 className="font-bold py-2 text-white">
-            <div className="text-2xl md:text-[44px] py-2 text-bold text-gray-300 leading-10">
+        <div className=" hidden md:block w-1/2 absolute  md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-[44px] leading-4 md:leading-10 bg-[#181822] font-bold p-10 ">
+          Hello <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
+          <h1 className="font-bold py-0 md:py-2 text-white">
+            <div className="text-2xl md:text-[44px] py-0 md:py-2 text-bold text-gray-300 leading-10">
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={["SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
@@ -84,7 +84,44 @@ function Home() {
             </span>{" "}
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006]">
+        <div className=" absolute z-30 md:hidden text-xl font-bold bg-[#000006] w-full text-white pl-5 -translate-y-20">
+          {" "}
+          Hello <div className="py-2 leading-10"> I'm James Juma Sindani.</div>
+          <h1 className="font-bold py-0 md:py-2 w-1/2 text-white">
+            <div className="text-2xl md:text-[44px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
+                loop={5}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </div>{" "}
+            <div className="py-2 text-lg">
+              {" "}
+              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </div>
+          </h1>
+          <div className=" socials w-1/2 py-5 ">
+            {" "}
+            <span className=" flex space-x-6">
+              {" "}
+              <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200  sm:scale-150 sm:hover:scale-[1.7]">
+                <AiFillLinkedin />{" "}
+              </p>
+              <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
+                <AiOutlineTwitter />{" "}
+              </p>
+              <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
+                <AiFillFacebook />{" "}
+              </p>
+            </span>{" "}
+          </div>
+        </div>
+        <div className=" pl-5 md:pl-20 bg-[#000006] ">
           <p className="text-[#aeaedf] text-lg font-bold "> Work Experience </p>
         </div>
       </div>

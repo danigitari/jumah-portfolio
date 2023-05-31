@@ -1,6 +1,11 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { AiOutlineMenu ,  AiFillLinkedin, AiOutlineTwitter, AiFillFacebook} from "react-icons/ai";
+import {
+  AiOutlineMenu,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+  AiFillFacebook,
+} from "react-icons/ai";
 
 import "./index.css";
 
@@ -54,7 +59,7 @@ function Home() {
             <div className="text-2xl md:text-[44px] py-0 md:py-2 text-bold text-gray-300 leading-10">
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={["SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
+                words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
                 loop={5}
                 cursor
                 cursorStyle="_"
@@ -91,8 +96,8 @@ function Home() {
             <div className="text-2xl md:text-[44px] py-0 md:py-2 text-bold text-gray-300 leading-10">
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={["SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
-                loop={5}
+                words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
+                loop={15}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
@@ -116,7 +121,7 @@ function Home() {
                 <AiOutlineTwitter />{" "}
               </p>
               <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
-                <AiFillFacebook />{" "}
+                <AiFillFacebook /> {" "}
               </p>
             </span>{" "}
           </div>

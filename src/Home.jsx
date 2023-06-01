@@ -60,7 +60,7 @@ function Home() {
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
-                loop={5}
+                loop={5555}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
@@ -127,7 +127,8 @@ function Home() {
           </div>
         </div>
         <div className=" pl-5 md:pl-20 bg-[#000006] ">
-          <p className="text-[#aeaedf] text-lg font-bold "> Work Experience </p>
+          <p className="text-[#aeaedf] text-3xl font-bold "> Work Experience </p>
+          di
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import {
   AiOutlineMenu,
+  AiOutlineArrowUp,
   AiFillLinkedin,
   AiOutlineTwitter,
   AiFillFacebook,
@@ -12,11 +13,10 @@ import "./index.css";
 function Home() {
   return (
     <>
-      <a href="#">
-        <div class="fixed  z-50 scroll-up h-12 w-12 shadow-md rounded-full bg-kekaBlue bottom-4 right-4 flex justify-center items-center">
-          <i class="fa-sharp fa-solid fa-arrow-up text-white"></i>
-        </div>
-      </a>
+      <div class="fixed  z-50 scroll-up h-12 w-12 shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-4 flex justify-center items-center">
+        <AiOutlineArrowUp />
+      </div>
+
       <div className="max-w-screen bg-[#000007] h-full relative">
         <div className=" h-screen flex  justify-between relative">
           <div className="absolute text-white flex justify-between z-20 w-full py-5 pr-5 md:pr-20 bg-[#000007] md:bg-transparent">

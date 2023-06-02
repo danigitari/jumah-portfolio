@@ -12,6 +12,11 @@ import "./index.css";
 function Home() {
   return (
     <>
+      <a href="#">
+        <div class="fixed  z-50 scroll-up h-12 w-12 shadow-md rounded-full bg-kekaBlue bottom-4 right-4 flex justify-center items-center">
+          <i class="fa-sharp fa-solid fa-arrow-up text-white"></i>
+        </div>
+      </a>
       <div className="max-w-screen bg-[#000007] h-full relative">
         <div className=" h-screen flex  justify-between relative">
           <div className="absolute text-white flex justify-between z-20 w-full py-5 pr-5 md:pr-20 bg-[#000007] md:bg-transparent">
@@ -121,14 +126,16 @@ function Home() {
                 <AiOutlineTwitter />{" "}
               </p>
               <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
-                <AiFillFacebook /> {" "}
+                <AiFillFacebook />{" "}
               </p>
             </span>{" "}
           </div>
         </div>
         <div className=" pl-5 md:pl-20 bg-[#000006] ">
-          <p className="text-[#aeaedf] text-3xl font-bold "> Work Experience </p>
-          
+          <p className="text-[#aeaedf] text-3xl font-bold ">
+            {" "}
+            Work Experience{" "}
+          </p>
         </div>
       </div>
     </>

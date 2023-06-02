@@ -128,7 +128,7 @@ function Home() {
         </div>
         <div className=" pl-5 md:pl-20 bg-[#000006] ">
           <p className="text-[#aeaedf] text-3xl font-bold "> Work Experience </p>
-          di
+          
         </div>
       </div>
     </>

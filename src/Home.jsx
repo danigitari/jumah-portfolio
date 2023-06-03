@@ -24,16 +24,16 @@ function Home() {
                 James Juma
               </div>
               <div className="hidden md:flex justify-between w-1/2 right-0  list-none  text-lg">
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  py-2">
+                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2">
                   Home
                 </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer py-2">
+                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2">
                   About
                 </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer py-2">
+                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2">
                   Blog
                 </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer py-2">
+                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-32 flex flex-col items-center justify-center py-2">
                   Mentorship
                 </li>
                 <li className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 ">
@@ -64,7 +64,7 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[44px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              <div className="text-2xl md:text-[40px] py-0 md:py-2 text-bold text-gray-300 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
@@ -138,34 +138,67 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-screen translate-y-60 md:translate-y-0 max-w-screen">
+        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-screen translate-y-60 md:translate-y-0 max-w-screen ">
           <p className="text-white text-3xl  py-5 font-bold nav-title w-36 pb-10">
             {" "}
             About Me{" "}
           </p>
           <div className="flex flex-col md:flex-row ">
             <div className="w-full md:w-1/2 text-white pr-10 text-lg">
-              I am a highly motivated and self-driven individual with Solution
-              Architect experience in AWS Cloud. I’m good at designing and
-              deploying scalable, reliable, and fault-tolerant workloads in AWS
-              Cloud, currently working at Silicon Overdrive. I am well
-              organized, detail-oriented, and a team player with prolific
-              leadership and soft skills. I possess strong analytical, research,
-              and time management skills with a high degree of commitment to my
-              work. I am a Co-founder of Resource Cloud Academy, a community
-              made up of young cloud enthusiasts. I lead the cloud community
-              members in executing real-world projects through hands-on lab
-              activities in AWS.
-              <button className="rounded-full py-2 px-6 text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] duration-300">
+              <p>
+                I am a highly motivated and self-driven individual with Solution
+                Architect experience in AWS Cloud. I’m good at designing and
+                deploying scalable, reliable, and fault-tolerant workloads in
+                AWS Cloud, currently working at Silicon Overdrive. I am well
+                organized, detail-oriented, and a team player with prolific
+                leadership and soft skills. I possess strong analytical,
+                research, and time management skills with a high degree of
+                commitment to my work. I am a Co-founder of Resource Cloud
+                Academy, a community made up of young cloud enthusiasts. I lead
+                the cloud community members in executing real-world projects
+                through hands-on lab activities in AWS.
+              </p>
+              <button className="rounded-full py-2 px-6 text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] duration-300 ">
                 Download CV
               </button>
             </div>
-            <div className="w-full md:w-1/2 -translate-y-20 p-10 pr-20">
+            <div className="w-full md:w-1/2 -translate-y-20 z-60 p-10 pr-20 ">
               <img
                 src="awshackathon2.jpg"
-                className="w-full h-96 object-cover    "
+                className="w-full h-96 object-cover  overflow-hidden  "
                 alt=""
               />
+            </div>
+          </div>
+        </div>
+        <div className="  bg-[#000006] pt-20 h-screen z-80 flex flex-col items-center max-w-screen">
+          <p className="text-white text-3xl  py-5 font-bold nav-title pb-10">
+            {" "}
+            Work Experience{" "}
+          </p>
+          <div className="flex w-full gap-16 items-center justify-center">
+            <div className=" text-[#c7c3e7] w-2/3 text-md text-right">
+              {" "}
+              June 2022 <p className="inline p-5 text-2xl font-bold  ">
+                {" "}
+                -{" "}
+              </p>{" "}
+              Present
+            </div>
+            <div className=" text-white w-full text-lg font-semibold px-20">
+              {" "}
+              Cloud Solutions Architect -{" "}
+              <p className="text-lg"> Silicon Overdrive</p>
+              <p className="text-sm font-light pt-10 text-gray-300">
+                I participate in architectural discussions to ensure solutions
+                are designed for successful deployment in the cloud. I create
+                AWS Proposals in line with client requirements. I capture and
+                Architect secure, scalable, and highly available environments on
+                AWS for clients following the principles of the AWS
+                Well-Architected Framework. Assisting the Sales and Engineering
+                Teams to technically engage with clients by offering pre-sales
+                assistance or advice where needed.
+              </p>{" "}
             </div>
           </div>
         </div>

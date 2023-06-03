@@ -14,9 +14,9 @@ function Home() {
   return (
     <>
       <div class="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center">
-        <AiOutlineArrowUp />
+        <AiOutlineArrowUp className="bg-[#3e2cca]" />
       </div>
-      <div className="flex flex-col bg-[#000006]">
+      <div className="flex flex-col bg-[#000006] ">
         <div className="max-w-screen bg-[#000007] h-full relative">
           <div className=" h-screen flex  justify-between ">
             <div className="absolute text-white flex justify-between z-20 w-full py-5 pr-5 md:pr-20 bg-[#000007] md:bg-transparent">
@@ -138,7 +138,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-screen translate-y-60 md:translate-y-0">
+        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-screen translate-y-60 md:translate-y-0 max-w-screen">
           <p className="text-white text-3xl  py-5 font-bold nav-title w-36 pb-10">
             {" "}
             About Me{" "}
@@ -156,14 +156,14 @@ function Home() {
               made up of young cloud enthusiasts. I lead the cloud community
               members in executing real-world projects through hands-on lab
               activities in AWS.
-              <button className="rounded-full py-2 px-6 text-white bg-[#3e2cca] mt-20 ">
+              <button className="rounded-full py-2 px-6 text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] duration-300">
                 Download CV
               </button>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 -translate-y-20 p-10 pr-20">
               <img
-                src="juma-aws-2.jpg"
-                className="w-full  px-5 h-96 object-scale-down  gg"
+                src="awshackathon2.jpg"
+                className="w-full h-96 object-cover    "
                 alt=""
               />
             </div>

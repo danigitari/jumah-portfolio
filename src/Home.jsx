@@ -138,13 +138,13 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-screen translate-y-60 md:translate-y-0 max-w-screen ">
+        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen ">
           <p className="text-white text-3xl  py-5 font-bold nav-title w-36 pb-10">
             {" "}
             About Me{" "}
           </p>
           <div className="flex flex-col md:flex-row ">
-            <div className="w-full md:w-1/2 text-white pr-10 text-lg">
+            <div className="w-full md:w-1/2 text-white pr-10 text-md font-light">
               <p>
                 I am a highly motivated and self-driven individual with Solution
                 Architect experience in AWS Cloud. I’m good at designing and
@@ -165,21 +165,22 @@ function Home() {
             <div className="w-full md:w-1/2 -translate-y-20 z-60 p-10 pr-20 ">
               <img
                 src="awshackathon2.jpg"
-                className="w-full h-96 object-cover  overflow-hidden  "
+                className="w-full h-96 object-cover  "
                 alt=""
               />
             </div>
           </div>
         </div>
-        <div className="  bg-[#000006] pt-20 h-screen z-80 flex flex-col items-center max-w-screen">
+        <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
           <p className="text-white text-3xl  py-5 font-bold nav-title pb-10">
             {" "}
             Work Experience{" "}
           </p>
-          <div className="flex w-full gap-16 items-center justify-center">
-            <div className=" text-[#c7c3e7] w-2/3 text-md text-right">
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> hi </div>
+          <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
               {" "}
-              June 2022 <p className="inline p-5 text-2xl font-bold  ">
+              June 2022 <p className="inline px-5 text-2xl font-bold  ">
                 {" "}
                 -{" "}
               </p>{" "}
@@ -201,6 +202,33 @@ function Home() {
               </p>{" "}
             </div>
           </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
+          <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
+              {" "}
+              January 2022{" "}
+              <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
+            </div>
+            <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
+              {" "}
+              Cloud Engineer -{" "}
+              <p className="text-lg">
+                {" "}
+                Spartec Consortium-Africa (SCA) Limited
+              </p>
+              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300">
+                I participate in architectural discussions to ensure solutions
+                are designed for successful deployment in the cloud. I create
+                AWS Proposals in line with client requirements. I capture and
+                Architect secure, scalable, and highly available environments on
+                AWS for clients following the principles of the AWS
+                Well-Architected Framework. Assisting the Sales and Engineering
+                Teams to technically engage with clients by offering pre-sales
+                assistance or advice where needed.
+              </p>{" "}
+            </div>
+          </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
         </div>
       </div>
     </>

@@ -198,7 +198,7 @@ function Home() {
               {" "}
               Cloud Solutions Architect -{" "}
               <p className="text-lg"> Silicon Overdrive</p>
-              <p className="text-sm font-light pt-10 text-gray-300">
+              <p className="text-sm font-light pt-10 text-gray-300 md:pr-20">
                 I participate in architectural discussions to ensure solutions
                 are designed for successful deployment in the cloud. I create
                 AWS Proposals in line with client requirements. I capture and
@@ -217,14 +217,14 @@ function Home() {
               January 2022{" "}
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
-            <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
+            <div className=" pt-5 md:pt-10 text-white w-full  text-lg font-semibold px-20">
               {" "}
               Cloud Engineer -{" "}
               <p className="text-lg">
                 {" "}
                 Spartec Consortium-Africa (SCA) Limited
               </p>
-              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300">
+              <p className="text-sm font-light pt-4 md:pt-10 md:pr-20 text-gray-300">
                 I participate in architectural discussions to ensure solutions
                 are designed for successful deployment in the cloud. I create
                 AWS Proposals in line with client requirements. I capture and
@@ -247,7 +247,7 @@ function Home() {
               {" "}
               AWS Architect -{" "}
               <p className="text-lg"> Azubi Africa · Apprenticeship</p>
-              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300">
+              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300 md:pr-20">
                 Trainee in AWS Cloud Practitioner and AWS Solutions Architect
                 Associate. Skills Acquired; - Familiarity with using the AWS
                 Management console and AWS Command Line Interface -Understanding

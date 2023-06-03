@@ -147,7 +147,7 @@ function Home() {
           </div>
         </div>
         <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen ">
-          <p className="text-white text-3xl  py-5 font-bold nav-title w-36 pb-10">
+          <p className="text-white text-3xl  py-5 font-bold heading w-36 pb-10">
             {" "}
             About Me{" "}
           </p>
@@ -180,7 +180,7 @@ function Home() {
           </div>
         </div>
         <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
-          <p className="text-white text-3xl  py-5 font-bold nav-title pb-10">
+          <p className="text-white text-3xl  py-5 font-bold heading pb-10">
             {" "}
             Work Experience{" "}
           </p>

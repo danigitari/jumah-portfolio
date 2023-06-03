@@ -64,10 +64,14 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[40px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-300 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
-                  words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
+                  words={[
+                    "AWS SYSTEM ADMINISTRATOR",
+                    "NETWORK ENGINEER",
+                    "CO-FOUNDER @RCA",
+                  ]}
                   loop={5555}
                   cursor
                   cursorStyle="_"
@@ -103,10 +107,14 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10"> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 w-1/2 text-white">
-              <div className="text-2xl md:text-[40px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-300 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
-                  words={["AWS SYSTEM ADMINISTRATOR", "NETWORK ENGINEER"]}
+                  words={[
+                    "AWS SYSTEM ADMINISTRATOR",
+                    "NETWORK ENGINEER",
+                    "Co-Founder of @RCA",
+                  ]}
                   loop={15}
                   cursor
                   cursorStyle="_"
@@ -225,6 +233,26 @@ function Home() {
                 Well-Architected Framework. Assisting the Sales and Engineering
                 Teams to technically engage with clients by offering pre-sales
                 assistance or advice where needed.
+              </p>{" "}
+            </div>
+          </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
+          <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
+              {" "}
+              January 2022{" "}
+              <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
+            </div>
+            <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
+              {" "}
+              AWS Architect -{" "}
+              <p className="text-lg"> Azubi Africa · Apprenticeship</p>
+              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300">
+                Trainee in AWS Cloud Practitioner and AWS Solutions Architect
+                Associate. Skills Acquired; - Familiarity with using the AWS
+                Management console and AWS Command Line Interface -Understanding
+                of AWS Well-Architected Framework and the AWS global
+                infrastructure
               </p>{" "}
             </div>
           </div>

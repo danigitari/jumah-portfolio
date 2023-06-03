@@ -5,4 +5,13 @@
 
 * {
   font-family: "Sen", sans-serif;
+
+}
+
+.nav-title::after{
+  @apply content-[''] bg-[#3e2cca]  h-[3px] w-0 duration-300 ease-in-out block;
+
+}
+.nav-title:hover::after{ 
+  @apply w-full;
 }

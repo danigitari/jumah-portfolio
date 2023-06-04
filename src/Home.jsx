@@ -13,6 +13,7 @@ import "./index.css";
 function Home() {
   return (
     <>
+
       <div class="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center">
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
       </div>
@@ -64,7 +65,7 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-500 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -107,7 +108,7 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10"> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 w-1/2 text-white">
-              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-300 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-500 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -147,7 +148,7 @@ function Home() {
           </div>
         </div>
         <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen ">
-          <p className="text-white text-3xl  py-5 font-bold heading w-36 pb-10">
+          <p className="text-white text-3xl text-center  py-5 font-bold heading w-36 pb-10">
             {" "}
             About Me{" "}
           </p>
@@ -166,7 +167,7 @@ function Home() {
                 the cloud community members in executing real-world projects
                 through hands-on lab activities in AWS.
               </p>
-              <button className="rounded-full py-2 px-6 text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] duration-300 ">
+              <button className="rounded-full shadow-lg py-2 px-6 fixed text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
                 Download CV
               </button>
             </div>
@@ -184,7 +185,7 @@ function Home() {
             {" "}
             Work Experience{" "}
           </p>
-          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> hi </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
               {" "}
@@ -198,19 +199,21 @@ function Home() {
               {" "}
               Cloud Solutions Architect -{" "}
               <p className="text-lg"> Silicon Overdrive</p>
-              <p className="text-sm font-light pt-10 text-gray-300 md:pr-20">
+              <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
                 I participate in architectural discussions to ensure solutions
                 are designed for successful deployment in the cloud. I create
-                AWS Proposals in line with client requirements. I capture and
-                Architect secure, scalable, and highly available environments on
-                AWS for clients following the principles of the AWS
-                Well-Architected Framework. Assisting the Sales and Engineering
-                Teams to technically engage with clients by offering pre-sales
-                assistance or advice where needed.
+                AWS Proposals in line with client requirements.
+                <br />
+                I capture and Architect secure, scalable, and highly available
+                environments on AWS for clients following the principles of the
+                AWS Well-Architected Framework.
+                <br /> Assisting the Sales and Engineering Teams to technically
+                engage with clients by offering pre-sales assistance or advice
+                where needed.
               </p>{" "}
             </div>
           </div>
-          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
               {" "}
@@ -224,19 +227,17 @@ function Home() {
                 {" "}
                 Spartec Consortium-Africa (SCA) Limited
               </p>
-              <p className="text-sm font-light pt-4 md:pt-10 md:pr-20 text-gray-300">
-                I participate in architectural discussions to ensure solutions
-                are designed for successful deployment in the cloud. I create
-                AWS Proposals in line with client requirements. I capture and
-                Architect secure, scalable, and highly available environments on
-                AWS for clients following the principles of the AWS
-                Well-Architected Framework. Assisting the Sales and Engineering
-                Teams to technically engage with clients by offering pre-sales
-                assistance or advice where needed.
+              <p className="text-sm font-light pt-4 md:pt-10 md:pr-20 text-gray-500">
+                • Offered clients and stakeholders advice on how to successfully
+                implement their cloud adoption strategies across a variety of
+                cloud platforms.
+                <br />• Guided new hires in the cloud department in acquiring
+                skills in Cloud Security procedures. • Took part in setting up
+                of office 365 to clients
               </p>{" "}
             </div>
           </div>
-          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
               {" "}
@@ -247,7 +248,7 @@ function Home() {
               {" "}
               AWS Architect -{" "}
               <p className="text-lg"> Azubi Africa · Apprenticeship</p>
-              <p className="text-sm font-light pt-4 md:pt-10 text-gray-300 md:pr-20">
+              <p className="text-sm font-light pt-4 md:pt-10 text-gray-500 md:pr-20">
                 Trainee in AWS Cloud Practitioner and AWS Solutions Architect
                 Associate. Skills Acquired; - Familiarity with using the AWS
                 Management console and AWS Command Line Interface -Understanding
@@ -256,7 +257,26 @@ function Home() {
               </p>{" "}
             </div>
           </div>
-          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> hi </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
+        </div>
+        <div className=" grid md:grid-cols-3 grid-rows-3 gap-0 text-whiten translate-y-60 md:translate-y-0  py-20 px-10">
+          <div className="row-span-1 md:col-span-1 text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+            recusandae id amet rem distinctio consequuntur voluptas veniam
+            corporis sint praesentium eligendi mollitia illum quas ipsa, itaque
+            dolorum assumenda consequatur totam nesciunt vitae magni labore
+            voluptates aliquid vel. Temporibus vitae odit quo esse dolores
+            facere dolorem delectus voluptatum quod modi suscipit tempora in
+            quibusdam consectetur aspernatur amet nesciunt voluptates deserunt
+            corporis, tempore nihil maiores? Dolores eum assumenda nihil
+            repellat nobis eligendi non odit, labore excepturi ratione. Quam
+            magni possimus consectetur fugiat deserunt nobis eaque, ea inventore
+            tempora voluptatem vitae laborum incidunt molestias autem
+            laboriosam, animi reiciendis impedit quisquam enim veritatis minima?
+            heh
+          </div>
+          <div className="row-span-1 md:col-span-1 text-white"> heh</div>
+          <div className="row-span-1 md:col-span-1 text-white "> ifha</div>
         </div>
       </div>
     </>

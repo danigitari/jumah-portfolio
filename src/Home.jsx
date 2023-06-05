@@ -7,13 +7,12 @@ import {
   AiOutlineTwitter,
   AiFillFacebook,
 } from "react-icons/ai";
-
+import { Link } from "react-scroll";
 import "./index.css";
 
 function Home() {
   return (
     <>
-
       <div class="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center">
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
       </div>
@@ -25,21 +24,56 @@ function Home() {
                 James Juma
               </div>
               <div className="hidden md:flex justify-between w-1/2 right-0  list-none  text-lg">
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2"
+                >
                   Home
-                </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2">
+                </Link>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
+                >
                   About
-                </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2">
+                </Link>
+                <Link
+                  to=""
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
+                >
                   Blog
-                </li>
-                <li className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-32 flex flex-col items-center justify-center py-2">
+                </Link>
+                <Link
+                  to="rca"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-32 flex flex-col items-center justify-center py-2"
+                >
                   Mentorship
-                </li>
-                <li className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 ">
+                </Link>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 "
+                >
                   Contact
-                </li>
+                </Link>
               </div>
               <div className="flex  md:hidden text-2xl font-bold py-2 ">
                 {" "}
@@ -49,6 +83,7 @@ function Home() {
             <div
               className=" hidden md:flex absolute right-0 h-screen bg-no-repeat bg-contain w-screen
          "
+              id="home"
             >
               <div className=" hidden md:flex w-full h-full bg-[#000006] ">
                 {" "}
@@ -147,7 +182,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen ">
+        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen " id="about">
           <p className="text-white text-3xl text-center  py-5 font-bold heading w-36 pb-10">
             {" "}
             About Me{" "}

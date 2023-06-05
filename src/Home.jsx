@@ -13,9 +13,12 @@ import "./index.css";
 function Home() {
   return (
     <>
-      <div class="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center">
+      <Link
+        to="home"
+        className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
+      >
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
-      </div>
+      </Link>
       <div className="flex flex-col bg-[#000006] ">
         <div className="max-w-screen bg-[#000007] h-full relative">
           <div className=" h-screen flex  justify-between ">
@@ -182,13 +185,16 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full pb-20" id="about">
-          <div className="text-white text-3xl text-center justify-self-center  py-5 font-bold heading w-36 h-4">
+        <div
+          className="grid grid-rows-4 pl-5 md:pl-20 bg-[#000006] pt-20 h-full"
+          id="about"
+        >
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-36 mb-20">
             {" "}
             About Me{" "}
           </div>
-          <div className="flex flex-col md:flex-row  h-full">
-            <div className="w-full md:w-1/2 text-white pr-10 text-md font-light">
+          <div className="flex flex-col gap-x-10 row-span-4 md:flex-row  h-full">
+            <div className="w-full md:w-1/2 text-white pr-10 text-md font-light h-full">
               <p>
                 I am a highly motivated and self-driven individual with Solution
                 Architect experience in AWS Cloud. I’m good at designing and
@@ -202,11 +208,11 @@ function Home() {
                 the cloud community members in executing real-world projects
                 through hands-on lab activities in AWS.
               </p>
-              <button className="rounded-full shadow-lg py-2 px-6 fixed text-white bg-[#3e2cca] mt-20 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+              <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
                 Download CV
               </button>
             </div>
-            <div className="w-full md:w-1/2  z-60 p-10 pr-20 ">
+            <div className="w-full md:w-1/2  z-60  pr-20 ">
               <img
                 src="awshackathon2.jpg"
                 className="w-full h-96 object-cover  "
@@ -294,24 +300,26 @@ function Home() {
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
         </div>
-        <div className=" grid md:grid-cols-3 grid-rows-3 gap-0 text-whiten translate-y-60 md:translate-y-0  py-20 px-10">
-          <div className="row-span-1 md:col-span-1 text-white">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-            recusandae id amet rem distinctio consequuntur voluptas veniam
-            corporis sint praesentium eligendi mollitia illum quas ipsa, itaque
-            dolorum assumenda consequatur totam nesciunt vitae magni labore
-            voluptates aliquid vel. Temporibus vitae odit quo esse dolores
-            facere dolorem delectus voluptatum quod modi suscipit tempora in
-            quibusdam consectetur aspernatur amet nesciunt voluptates deserunt
-            corporis, tempore nihil maiores? Dolores eum assumenda nihil
-            repellat nobis eligendi non odit, labore excepturi ratione. Quam
-            magni possimus consectetur fugiat deserunt nobis eaque, ea inventore
-            tempora voluptatem vitae laborum incidunt molestias autem
-            laboriosam, animi reiciendis impedit quisquam enim veritatis minima?
-            heh
+
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+            Certificaions
           </div>
-          <div className="row-span-1 md:col-span-1 text-white"> heh</div>
-          <div className="row-span-1 md:col-span-1 text-white "> ifha</div>
+        </div>
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+            Talks I've Done
+          </div>
+        </div>
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-96 mb-20">
+                  Resource Cloud Academy
+          </div>
+        </div>
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-32 mb-20">
+            Contact
+          </div>
         </div>
       </div>
     </>

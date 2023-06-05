@@ -182,12 +182,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-60 md:translate-y-0 max-w-screen " id="about">
-          <p className="text-white text-3xl text-center  py-5 font-bold heading w-36 pb-10">
+        <div className=" pl-5 md:pl-20 bg-[#000006] pt-20 h-full pb-20" id="about">
+          <div className="text-white text-3xl text-center justify-self-center  py-5 font-bold heading w-36 h-4">
             {" "}
             About Me{" "}
-          </p>
-          <div className="flex flex-col md:flex-row ">
+          </div>
+          <div className="flex flex-col md:flex-row  h-full">
             <div className="w-full md:w-1/2 text-white pr-10 text-md font-light">
               <p>
                 I am a highly motivated and self-driven individual with Solution
@@ -206,7 +206,7 @@ function Home() {
                 Download CV
               </button>
             </div>
-            <div className="w-full md:w-1/2 -translate-y-20 z-60 p-10 pr-20 ">
+            <div className="w-full md:w-1/2  z-60 p-10 pr-20 ">
               <img
                 src="awshackathon2.jpg"
                 className="w-full h-96 object-cover  "

@@ -260,6 +260,42 @@ function Home() {
             </div>
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
+          <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
+              {" "}
+              January 2022{" "}
+              <p className="inline px-5 text-2xl font-bold  "> - </p> Present
+            </div>
+            <div className=" text-white w-full text-lg font-semibold px-20">
+              {" "}
+              Co-Founder & Partnership Manager -{" "}
+              <p className="text-md font-light">
+                {" "}
+                Resource Cloud Academy · Full-time
+              </p>
+              <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
+                I offer free cloud resources to help the community members skill
+                up. I also lead the community in doing cloud related projects on
+                AWS and Azure Clouds.
+                <br />
+                <div className="font-bold text-white mt-4">Skills </div>
+                <br />
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mr-2">
+                  {" "}
+                  aws{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 ">
+                  {" "}
+                  linux{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 ">
+                  {" "}
+                  Microsoft Azure{" "}
+                </button>
+              </p>{" "}
+            </div>
+          </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
               {" "}
@@ -300,6 +336,13 @@ function Home() {
                 Management console and AWS Command Line Interface -Understanding
                 of AWS Well-Architected Framework and the AWS global
                 infrastructure
+                <br />
+                <div className="font-bold text-white mt-4">Skills </div>
+                <br />
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mr-2">
+                  {" "}
+                  aws{" "}
+                </button>
               </p>{" "}
             </div>
           </div>

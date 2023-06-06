@@ -375,9 +375,35 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
         </div>
 
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+        <div className=" grid  bg-[#000006] pt-20 " id="cerifications">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
+          </div>
+          <div className=" mt-10 space-x-6 mx-20">
+            <iframe
+              className="w-[400px] h-[300px]  "
+              src="https://www.youtube.com/embed/9st7RVY7kdA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              className="w-[400px] h-[300px]  "
+              src="https://www.youtube.com/embed/btA7H5m6sIQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              className="w-[400px] h-[300px]  "
+              src="https://www.youtube.com/embed/tyFfmFSAQwQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">

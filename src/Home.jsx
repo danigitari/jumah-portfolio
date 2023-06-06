@@ -17,7 +17,7 @@ function Home() {
     <>
       <Link
         to="home"
-        className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-md rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
+        className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
       >
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
       </Link>
@@ -237,7 +237,7 @@ function Home() {
             <div className=" text-white w-full text-lg font-semibold px-20">
               {" "}
               Cloud Solutions Architect -{" "}
-              <p className="text-lg"> Silicon Overdrive</p>
+              <p className="text-md font-light"> Silicon Overdrive</p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
                 I participate in architectural discussions to ensure solutions
                 are designed for successful deployment in the cloud. I create
@@ -280,7 +280,7 @@ function Home() {
                 <br />
                 <div className="font-bold text-white mt-4">Skills </div>
                 <br />
-                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mr-2">
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   {" "}
                   aws{" "}
                 </button>
@@ -305,7 +305,7 @@ function Home() {
             <div className=" pt-5 md:pt-10 text-white w-full  text-lg font-semibold px-20">
               {" "}
               Cloud Engineer -{" "}
-              <p className="text-lg">
+              <p className="text-md font-light">
                 {" "}
                 Spartec Consortium-Africa (SCA) Limited
               </p>
@@ -316,6 +316,29 @@ function Home() {
                 <br />• Guided new hires in the cloud department in acquiring
                 skills in Cloud Security procedures. • Took part in setting up
                 of office 365 to clients
+                <br />
+                <div className="font-bold text-white mt-4">Skills </div>
+                <br />
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  {" "}
+                  Office 365{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  {" "}
+                  VMware{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  {" "}
+                  Palo alto{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  {" "}
+                  Microsft Teams{" "}
+                </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  {" "}
+                  Microsoft Azure
+                </button>
               </p>{" "}
             </div>
           </div>
@@ -329,7 +352,10 @@ function Home() {
             <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
               {" "}
               AWS Architect -{" "}
-              <p className="text-lg"> Azubi Africa · Apprenticeship</p>
+              <p className="text-md font-light">
+                {" "}
+                Azubi Africa · Apprenticeship
+              </p>
               <p className="text-sm font-light pt-4 md:pt-10 text-gray-500 md:pr-20">
                 Trainee in AWS Cloud Practitioner and AWS Solutions Architect
                 Associate. Skills Acquired; - Familiarity with using the AWS
@@ -339,7 +365,7 @@ function Home() {
                 <br />
                 <div className="font-bold text-white mt-4">Skills </div>
                 <br />
-                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mr-2">
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   {" "}
                   aws{" "}
                 </button>
@@ -383,6 +409,28 @@ function Home() {
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-32 mb-20">
             Contact
+          </div>
+        </div>
+      </div>
+      <div className="footer bottom-0 bg-[#453e7b]  pl-20 py-20 text-white">
+        <div className="grid  grid-row-3 md:grid-cols-3">
+          <div className="row-span-1 md:col-span-1">
+            <p className="text-3xl text-white py-10">James Jumah</p>
+            <div className=" socials w-1/2 py-5 text-[30px]">
+              {" "}
+              <span className=" flex space-x-6">
+                {" "}
+                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <AiFillLinkedin />{" "}
+                </p>
+                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <AiOutlineTwitter />{" "}
+                </p>
+                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <AiFillFacebook />{" "}
+                </p>
+              </span>{" "}
+            </div>
           </div>
         </div>
       </div>

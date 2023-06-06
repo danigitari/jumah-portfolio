@@ -9,7 +9,8 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-scroll";
 import "./index.css";
-import {DefaultPlayer as Video} from 'react-html5video';
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
 
 function Home() {
   return (
@@ -218,6 +219,7 @@ function Home() {
                 src="awshackathon2.jpg"
                 className="w-full h-96 object-cover  "
                 alt=""
+                type="image/webp"
               />
             </div>
           </div>
@@ -304,7 +306,7 @@ function Home() {
 
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
-            Certificaions
+            Certifications
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
@@ -312,10 +314,14 @@ function Home() {
             Talks I've Done
           </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="mentorship">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-96 mb-20">
-                  Resource Cloud Academy
-            
+            Resource Cloud Academy
+          </div>
+          <div className="md:w-1/2  p-10">
+            <Video autoPlay loop>
+              <source src="Juma.mp4" type="video/webm" />
+            </Video>
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">

@@ -34,7 +34,6 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2"
                 >
                   Home
@@ -44,7 +43,6 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
                 >
                   About
@@ -54,7 +52,6 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
                 >
                   Blog
@@ -64,7 +61,6 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-32 flex flex-col items-center justify-center py-2"
                 >
                   Mentorship
@@ -74,7 +70,6 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  
                   className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 "
                 >
                   Contact
@@ -254,6 +249,13 @@ function Home() {
                 <br /> Assisting the Sales and Engineering Teams to technically
                 engage with clients by offering pre-sales assistance or advice
                 where needed.
+                <br />
+                <div className="font-bold text-white mt-4">Skills </div>
+                <br />
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
+                  {" "}
+                  aws{" "}
+                </button>
               </p>{" "}
             </div>
           </div>

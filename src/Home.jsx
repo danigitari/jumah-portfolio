@@ -34,7 +34,7 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2"
                 >
                   Home
@@ -44,7 +44,7 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
                 >
                   About
@@ -54,7 +54,7 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-16 flex flex-col items-center justify-center py-2"
                 >
                   Blog
@@ -64,7 +64,7 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer  w-32 flex flex-col items-center justify-center py-2"
                 >
                   Mentorship
@@ -74,7 +74,7 @@ function Home() {
                   spy={true}
                   smooth={true}
                   offset={50}
-                  duration={500}
+                  
                   className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 "
                 >
                   Contact
@@ -314,14 +314,25 @@ function Home() {
             Talks I've Done
           </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="mentorship">
+        <div className=" grid  bg-[#000006] pt-20 h-screen" id="rca">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-96 mb-20">
             Resource Cloud Academy
           </div>
-          <div className="md:w-1/2  p-10">
-            <Video autoPlay loop>
-              <source src="Juma.mp4" type="video/webm" />
-            </Video>
+          <div className="flex flex-col md:flex-row w-full ">
+            <p className="text-white p-10">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sit
+              ipsa. Hic velit quibusdam beatae eius quis culpa animi iste,
+              fugiat et. Vel voluptatibus pariatur repellat veniam alias
+              accusantium deleniti. Natus veritatis officia porro nulla at sed
+              nostrum eius facere adipisci? Animi excepturi nostrum aliquam
+              nesciunt corporis modi voluptas iusto!{" "}
+            </p>
+            <div className="p-10">
+              <Video loop>
+                <source src="Juma.mp4" type="video/webm" />
+              </Video>
+            </div>
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">

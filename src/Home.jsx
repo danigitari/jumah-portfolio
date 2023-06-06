@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-scroll";
 import "./index.css";
+import {DefaultPlayer as Video} from 'react-html5video';
 
 function Home() {
   return (
@@ -314,6 +315,7 @@ function Home() {
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-96 mb-20">
                   Resource Cloud Academy
+            
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">

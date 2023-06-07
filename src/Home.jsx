@@ -6,11 +6,18 @@ import {
   AiFillLinkedin,
   AiOutlineTwitter,
   AiFillFacebook,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { Link } from "react-scroll";
 import "./index.css";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFlip, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function Home() {
   return (
@@ -135,6 +142,9 @@ function Home() {
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiFillFacebook />{" "}
                 </p>
+                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <AiOutlineMail />{" "}
+                </p>
               </span>{" "}
             </div>
           </div>
@@ -205,7 +215,7 @@ function Home() {
                 the cloud community members in executing real-world projects
                 through hands-on lab activities in AWS.
               </p>
-              <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+              <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
                 Download CV
               </button>
             </div>
@@ -250,7 +260,8 @@ function Home() {
                 engage with clients by offering pre-sales assistance or advice
                 where needed.
                 <br />
-                <div className="font-bold text-white mt-4">Skills </div>
+                <br />{" "}
+                <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
                   {" "}
@@ -278,17 +289,18 @@ function Home() {
                 up. I also lead the community in doing cloud related projects on
                 AWS and Azure Clouds.
                 <br />
-                <div className="font-bold text-white mt-4">Skills </div>
+                <br />{" "}
+                <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   {" "}
                   aws{" "}
                 </button>
-                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 ">
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
                   {" "}
                   linux{" "}
                 </button>
-                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 ">
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
                   {" "}
                   Microsoft Azure{" "}
                 </button>
@@ -317,7 +329,8 @@ function Home() {
                 skills in Cloud Security procedures. • Took part in setting up
                 of office 365 to clients
                 <br />
-                <div className="font-bold text-white mt-4">Skills </div>
+                <br />{" "}
+                <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   {" "}
@@ -363,7 +376,8 @@ function Home() {
                 of AWS Well-Architected Framework and the AWS global
                 infrastructure
                 <br />
-                <div className="font-bold text-white mt-4">Skills </div>
+                <br />{" "}
+                <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   {" "}
@@ -379,40 +393,72 @@ function Home() {
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
           </div>
-          <div className=" mt-10 space-x-6 mx-20">
-            <iframe
-              className="w-[400px] h-[300px]  "
-              src="https://www.youtube.com/embed/9st7RVY7kdA"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              className="w-[400px] h-[300px]  "
-              src="https://www.youtube.com/embed/btA7H5m6sIQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              className="w-[400px] h-[300px]  "
-              src="https://www.youtube.com/embed/tyFfmFSAQwQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="cerifications">
+        <div className=" grid  bg-[#000006] pt-20 w-full " id="cerifications">
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Talks I've Done
           </div>
+          <div className="hidden md:flex md:flex-wrap w-full">
+            <Swiper
+              slidesPerView={3}
+              pagination={{ clickable: true }}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                {" "}
+                <iframe
+                  className="w-[300px] h-[300px]  m-10"
+                  src="https://www.youtube.com/embed/9st7RVY7kdA"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <iframe
+                  className="w-[300px] h-[300px]  m-10"
+                  src="https://www.youtube.com/embed/btA7H5m6sIQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <iframe
+                  className="w-[300px] h-[300px]  m-10"
+                  src="https://www.youtube.com/embed/tyFfmFSAQwQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div className="md:hidden">
+            <iframe
+              className="w-[300px] h-[300px]  m-10"
+              src="https://www.youtube.com/embed/9st7RVY7kdA"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+            <iframe
+              className="w-[300px] h-[300px]  m-10"
+              src="https://www.youtube.com/embed/btA7H5m6sIQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>{" "}
+            <iframe
+              className="w-[300px] h-[300px]  m-10"
+              src="https://www.youtube.com/embed/tyFfmFSAQwQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+
+          <div className=" mt-10 space-x-6 mx-20"></div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 h-screen" id="rca">
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-96 mb-20">
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-20">
             Resource Cloud Academy
           </div>
           <div className="flex flex-col md:flex-row w-full ">
@@ -425,20 +471,37 @@ function Home() {
               nostrum eius facere adipisci? Animi excepturi nostrum aliquam
               nesciunt corporis modi voluptas iusto!{" "}
             </p>
-            <div className="p-10">
-              <Video loop>
+            <div className="p-10 text-lg">
+              <Video autoPlay muted="muted" loop>
                 <source src="Juma.mp4" type="video/webm" />
               </Video>
             </div>
           </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="contact">
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-32 mb-20">
+        <div className=" grid  bg-[#000006] pt-10 pl-20 " id="contact">
+          <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading w-32 ">
             Contact
+          </div>
+          <div className="grid grid-rows-3 md:grid-col-3 text-xl text-white">
+            <div className="row-span-1 md:col-span-1">
+              {" "}
+              <div className="email flex ">
+                {" "}
+                <span className="pr-5 font-bold text-2xl">
+                  {" "}
+                  <AiOutlineMail />
+                </span>
+                <p className=""> Email </p>
+              </div>
+              <div className="text-md pt-5 text-gray-300">
+                JumahJames.@gmail.com
+              </div>
+            </div>{" "}
+            <div className="row-span-2 md:col-span-2"></div>
           </div>
         </div>
       </div>
-      <div className="footer bottom-0 bg-[#453e7b]  pl-20 py-20 text-white">
+      <div className="footer bottom-0 bg-gray-500  pl-20 py-20 text-white">
         <div className="grid  grid-row-3 md:grid-cols-3">
           <div className="row-span-1 md:col-span-1">
             <p className="text-3xl text-white py-10">James Jumah</p>

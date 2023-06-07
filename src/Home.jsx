@@ -107,7 +107,7 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-blue-800 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-400 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -481,7 +481,7 @@ function Home() {
             <div className="w-full md:w-1/2  z-60 pl-10 pr-10 pb-10 ">
               <img
                 src="resource.JPG "
-                className="w-full h-96 object-cover  "
+                className="w-full h-96 object-contain"
                 alt=""
                 type="image/webp"
               />
@@ -489,7 +489,7 @@ function Home() {
             <div className="w-full md:w-1/2  z-60 pl-10 pb-10 pr-10 ">
               <img
                 src="resource2.jpg"
-                className="w-full h-96 object-cover  "
+                className="w-full h-96 object-contain "
                 alt=""
                 type="image/webp"
               />

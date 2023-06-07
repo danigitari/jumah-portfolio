@@ -478,7 +478,7 @@ function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full ">
-            <div className="w-full md:w-1/2  z-60 pl-10 pr-10 pb-10 ">
+            <div className="w-full md:w-1/2  z-60 pl-20 pr-10 pb-10 ">
               <img
                 src="resource.JPG "
                 className="w-full h-96 object-contain"
@@ -486,7 +486,7 @@ function Home() {
                 type="image/webp"
               />
             </div>
-            <div className="w-full md:w-1/2  z-60 pl-10 pb-10 pr-10 ">
+            <div className="w-full md:w-1/2  z-60 pl-20 pb-10 pr-10 ">
               <img
                 src="resource2.jpg"
                 className="w-full h-96 object-contain "

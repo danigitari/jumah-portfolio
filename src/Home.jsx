@@ -92,13 +92,13 @@ function Home() {
          "
               id="home"
             >
-              <div className=" hidden md:flex w-full h-full bg-[#000006] ">
+              <div className=" hidden md:flex w-full h-full bg-[#000007] ">
                 {" "}
               </div>
               <img
                 src="jumah3.png"
                 alt=""
-                className="flex h-full right-0 pt-0 md:pt-10 bg-[#000006]"
+                className="flex h-full right-0  pt-0 md:pt-10 bg-[#000006]"
               />
             </div>
             <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
@@ -107,7 +107,7 @@ function Home() {
             Hello{" "}
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-500 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-blue-800 leading-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -260,9 +260,9 @@ function Home() {
                 engage with clients by offering pre-sales assistance or advice
                 where needed.
                 <br />
-                <br />{" "}
-                <span className="font-bold text-white mt-4">Skills </span>
+                <br /> <span className="font-bold text-white ">Skills </span>
                 <br />
+                <br />  
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
                   {" "}
                   aws{" "}
@@ -395,10 +395,10 @@ function Home() {
           </div>
         </div>
         <div className=" grid  bg-[#000006] pt-20 w-full " id="cerifications">
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+          <div className="text-white text-3xl text-center  justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Talks I've Done
           </div>
-          <div className="hidden md:flex md:flex-wrap w-full">
+          <div className="hidden lg:flex md:flex-wrap w-full">
             <Swiper
               slidesPerView={3}
               pagination={{ clickable: true }}
@@ -434,7 +434,7 @@ function Home() {
             </Swiper>
           </div>
 
-          <div className="md:hidden">
+          <div className=" grid place-items-center lg:hidden">
             <iframe
               className="w-[300px] h-[300px]  m-10"
               src="https://www.youtube.com/embed/9st7RVY7kdA"
@@ -457,7 +457,7 @@ function Home() {
 
           <div className=" mt-10 space-x-6 mx-20"></div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 h-screen" id="rca">
+        <div className=" grid  bg-[#000006] pt-20 " id="rca">
           <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-20">
             Resource Cloud Academy
           </div>
@@ -477,27 +477,72 @@ function Home() {
               </Video>
             </div>
           </div>
+          <div className="flex flex-col md:flex-row w-full ">
+            <div className="w-full md:w-1/2  z-60 pl-10 pr-10 pb-10 ">
+              <img
+                src="resource.JPG "
+                className="w-full h-96 object-cover  "
+                alt=""
+                type="image/webp"
+              />
+            </div>
+            <div className="w-full md:w-1/2  z-60 pl-10 pb-10 pr-10 ">
+              <img
+                src="resource2.jpg"
+                className="w-full h-96 object-cover  "
+                alt=""
+                type="image/webp"
+              />
+            </div>
+          </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-10 pl-20 " id="contact">
+        <div className=" grid  bg-[#000006] pt-10 " id="contact">
           <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading w-32 ">
             Contact
           </div>
-          <div className="grid grid-rows-3 md:grid-col-3 text-xl text-white">
+          <div className="grid grid-rows-3 md:grid-cols-3 text-xl text-white pl-10">
             <div className="row-span-1 md:col-span-1">
               {" "}
-              <div className="email flex ">
-                {" "}
-                <span className="pr-5 font-bold text-2xl">
-                  {" "}
-                  <AiOutlineMail />
-                </span>
-                <p className=""> Email </p>
-              </div>
-              <div className="text-md pt-5 text-gray-300">
-                JumahJames.@gmail.com
+              <div className=" pt-5">
+                <p className="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>
+                <div className="py-2 text-gray-200 xs:px-10">
+                  <span className="font-bold pr-5"> Email : </span>{" "}
+                  jamesjumah@gmail.com
+                </div>
+                <div className="py-2 text-gray-200 xs:px-10">
+                  <span className="font-bold pr-5"> Phone : </span> +254 7111
+                  111
+                </div>
               </div>
             </div>{" "}
-            <div className="row-span-2 md:col-span-2"></div>
+            <div className="row-span-2 md:col-span-2 pt-10  pl-5 md:ml-10 max-w-screen">
+              <input
+                className="border-slate-200 md:mr-5 block md:inline mb-5 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                type="text"
+                name=""
+                id=""
+                placeholder="Name"
+              />
+              <input
+                className="border-slate-200 ml-0  block md:inline mb-5 md:ml-10 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <div className="">
+                {" "}
+                <textarea
+                  className="border-slate-200 mt-10 text-gray-700 placeholder-slate-400 h-48 w-64 md:w-[580px] contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                  name=""
+                  id=""
+                  placeholder="Message"
+                ></textarea>
+                <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] block hover:bg-blue-500 ease-in duration-300 ">
+                  Submit
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

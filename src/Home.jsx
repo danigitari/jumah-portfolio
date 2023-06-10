@@ -125,8 +125,7 @@ function Home() {
               </div>{" "}
               <div className="py-2 text-lg">
                 {" "}
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam
+                Lorem ipsum dolor sit amet consectetur adipisicing. lorem ipsum dolor si amet
               </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
@@ -192,6 +191,7 @@ function Home() {
             </div>
           </div>
         </div>
+
         <div
           className="grid grid-rows-4 pl-5 md:pl-20 bg-[#000006] pt-20 h-full"
           id="about"
@@ -203,17 +203,20 @@ function Home() {
           <div className="flex flex-col gap-x-10 row-span-4 md:flex-row  h-full">
             <div className="w-full md:w-1/2 text-white pr-10 text-md font-light h-full">
               <p>
-                I am a highly motivated and self-driven individual with Solution
-                Architect experience in AWS Cloud. I’m good at designing and
-                deploying scalable, reliable, and fault-tolerant workloads in
-                AWS Cloud, currently working at Silicon Overdrive. I am well
-                organized, detail-oriented, and a team player with prolific
-                leadership and soft skills. I possess strong analytical,
-                research, and time management skills with a high degree of
-                commitment to my work. I am a Co-founder of Resource Cloud
-                Academy, a community made up of young cloud enthusiasts. I lead
-                the cloud community members in executing real-world projects
-                through hands-on lab activities in AWS.
+                I am a passionate cloud enthusiast and AWS Solutions Architect
+                with a drive to shape the future through technology. Currently
+                working at Silicon Overdrive, I bring a wealth of experience in
+                designing and deploying scalable, reliable, and fault-tolerant
+                workloads in the AWS Cloud. As a highly motivated and
+                self-driven individual, I thrive in dynamic environments and
+                excel in delivering innovative solutions. My strong analytical
+                and research skills, coupled with meticulous attention to
+                detail, enable me to tackle complex challenges with confidence.
+                I am a dedicated team player with exceptional leadership and
+                soft skills, fostering collaboration and driving success. With a
+                deep commitment to my work, I constantly seek opportunities to
+                enhance my expertise and stay at the forefront of cloud
+                technology.
               </p>
               <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
                 Download CV
@@ -262,7 +265,7 @@ function Home() {
                 <br />
                 <br /> <span className="font-bold text-white ">Skills </span>
                 <br />
-                <br />  
+                <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
                   {" "}
                   aws{" "}

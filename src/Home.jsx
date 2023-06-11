@@ -125,7 +125,7 @@ function Home() {
               </div>{" "}
               <div className="py-2 text-lg">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing. lorem ipsum dolor si amet
+               
               </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
@@ -170,8 +170,7 @@ function Home() {
               </div>{" "}
               <div className="py-2 text-lg">
                 {" "}
-                lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam
+           
               </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">

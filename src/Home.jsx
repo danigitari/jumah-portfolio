@@ -19,9 +19,11 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
 function Home() {
   return (
     <>
+   
       <Link
         to="home"
         className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
@@ -223,7 +225,7 @@ function Home() {
             </div>
             <div className="w-full md:w-1/2  z-60  pr-20 ">
               <img
-                src="awshackathon2.jpg"
+                src="awshackathon5.jpg"
                 className="w-full h-96 object-cover  "
                 alt=""
                 type="image/webp"

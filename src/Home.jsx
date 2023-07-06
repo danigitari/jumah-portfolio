@@ -550,7 +550,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="footer bottom-0 bg-gray-500  pl-20 py-20 text-white">
+      {/* <div className="footer bottom-0 bg-gray-500  pl-20 py-20 text-white">
         <div className="grid  grid-row-3 md:grid-cols-3">
           <div className="row-span-1 md:col-span-1">
             <p className="text-3xl text-white py-10">James Jumah</p>
@@ -571,7 +571,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

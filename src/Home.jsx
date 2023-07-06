@@ -521,14 +521,14 @@ function Home() {
             </div>{" "}
             <div className="row-span-2 md:col-span-2 pt-10  pl-5 md:ml-10 max-w-screen">
               <input
-                className="border-slate-200 md:mr-5 block md:inline mb-5 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                className="border-slate-200 md:mr-5 block md:inline mb-5 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
                 type="text"
                 name=""
                 id=""
                 placeholder="Name"
               />
               <input
-                className="border-slate-200 ml-0  block md:inline mb-5 md:ml-10 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                className="border-slate-200 ml-0  block md:inline mb-5 md:ml-10 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
                 type="text"
                 name=""
                 id=""
@@ -537,7 +537,7 @@ function Home() {
               <div className="">
                 {" "}
                 <textarea
-                  className="border-slate-200 mt-10 text-gray-700 placeholder-slate-400 h-48 w-64 md:w-[580px] contrast-more:border-slate-400 contrast-more:placeholder-slate-500 rounded-lg p-2"
+                  className="border-slate-200 mt-10 text-gray-700 placeholder-slate-400 h-48 w-64 md:w-[580px] contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
                   name=""
                   id=""
                   placeholder="Message"

@@ -5,7 +5,6 @@ import {
   AiOutlineArrowUp,
   AiFillLinkedin,
   AiOutlineTwitter,
-
   AiOutlineMail,
 } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -138,7 +137,6 @@ function Home() {
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiOutlineTwitter />{" "}
                 </p>
-     
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiOutlineMail />{" "}
                 </p>
@@ -178,7 +176,6 @@ function Home() {
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
                   <AiOutlineTwitter />{" "}
                 </p>
-
               </span>{" "}
             </div>
           </div>
@@ -192,8 +189,8 @@ function Home() {
             {" "}
             About Me{" "}
           </div>
-          <div className="flex flex-col gap-x-10 row-span-4 md:flex-row  h-full">
-            <div className="w-full md:w-1/2 text-white pr-10 text-md font-light h-full">
+          <div className="flex flex-col gap-x-10 row-span-4 lg:flex-row  h-full">
+            <div className="w-full lg:w-1/2 text-white pr-10 text-md font-light h-full">
               <p>
                 I am a passionate cloud enthusiast and AWS Solutions Architect
                 with a drive to shape the future through technology. Currently
@@ -214,7 +211,7 @@ function Home() {
                 Download CV
               </button>
             </div>
-            <div className="w-full md:w-1/2  z-60  pr-20 ">
+            <div className="w-full lg:w-1/2  z-60  pr-20 ">
               <img
                 src="awshackathon5.jpg"
                 className="w-full h-96 object-cover  "
@@ -467,9 +464,9 @@ function Home() {
               </Video>
             </div> */}
           </div>
-          <div className="flex flex-col gap-x-10 row-span-4 md:flex-row  h-full">
-            <div className="w-full md:w-1/2 text-white pl-10 text-md font-light h-full">
-              <p>
+          <div className="flex flex-col gap-x-10 row-span-4 lg:flex-row  h-full">
+            <div className="w-full lg:w-1/2 text-white pl-10 text-md font-light h-full grid place-items-center">
+              <p className="text-center lg:text-left w-1/2 lg:w-full px-10 ">
                 Resource Cloud Academy is an elite community of tech enthusiasts
                 that focuses on equipping individuals with the necessary skills
                 and experience needed to start or develop their careers in cloud
@@ -485,7 +482,7 @@ function Home() {
                 </button>
               </a>
             </div>
-            <div className=" grid place-items-center w-full md:w-1/2  z-60  lg:pr-20 ">
+            <div className=" grid place-items-center w-full lg:w-1/2  z-60  lg:pr-20 ">
               <img
                 src="resource.JPG "
                 className="w-full h-96 object-contain"
@@ -522,33 +519,30 @@ function Home() {
               hello, please feel free to reach out to me via email.
             </p>
             <button className="rounded-full w-full sm:w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
-              <a href="mailto:"> talk to me </a>
+              <a href="mailto:"> Talk to me </a>
             </button>
-          </div>
-        </div>
-      </div>
-      {/* <div className="footer bottom-0 bg-gray-500  pl-20 py-20 text-white">
-        <div className="grid  grid-row-3 md:grid-cols-3">
-          <div className="row-span-1 md:col-span-1">
-            <p className="text-3xl text-white py-10">James Jumah</p>
-            <div className=" socials w-1/2 py-5 text-[30px]">
-              {" "}
-              <span className=" flex space-x-6">
-                {" "}
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiFillLinkedin />{" "}
+
+            <div className="pt-20 lg:mt-20 bottom-0 ">
+              <div className="w-full md-w-1/4 grid place-items-center">
+                <div className="flex text-white text-3xl gap-x-6">
+                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                    <AiFillLinkedin />
+                  </p>
+                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                    <AiOutlineTwitter />
+                  </p>
+                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                    <AiOutlineMail />
+                  </p>
+                </div>
+                <p className="text-white pt-5 ">
+                  James Jumah Sindani • © 2023{" "}
                 </p>
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiOutlineTwitter />{" "}
-                </p>
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiFillFacebook />{" "}
-                </p>
-              </span>{" "}
+              </div>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

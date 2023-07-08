@@ -5,7 +5,7 @@ import {
   AiOutlineArrowUp,
   AiFillLinkedin,
   AiOutlineTwitter,
-  AiFillFacebook,
+
   AiOutlineMail,
 } from "react-icons/ai";
 import { Link } from "react-scroll";
@@ -25,6 +25,9 @@ function Home() {
     <>
       <Link
         to="home"
+        spy={true}
+        smooth={true}
+        offset={0}
         className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
       >
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
@@ -41,7 +44,7 @@ function Home() {
                   to="home"
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={0}
                   className="hover:text-lg  nav-title hover:scale-[1.2] ease-in duration-200 hover:cursor-pointer w-16 flex flex-col items-center justify-center py-2"
                 >
                   Home
@@ -135,9 +138,7 @@ function Home() {
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiOutlineTwitter />{" "}
                 </p>
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiFillFacebook />{" "}
-                </p>
+     
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiOutlineMail />{" "}
                 </p>
@@ -177,9 +178,7 @@ function Home() {
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
                   <AiOutlineTwitter />{" "}
                 </p>
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
-                  <AiFillFacebook />{" "}
-                </p>
+
               </span>{" "}
             </div>
           </div>
@@ -379,6 +378,9 @@ function Home() {
                   {" "}
                   aws{" "}
                 </button>
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
+                  linux
+                </button>
               </p>{" "}
             </div>
           </div>
@@ -509,17 +511,17 @@ function Home() {
            bg-[#000006] pt-10 "
           id="contact"
         >
-          <div className="w-1/2 grid  place-items-center">
+          <div className="w-full md:w-1/2 grid  place-items-center px-5">
             <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading ">
               GET IN TOUCH
             </div>
-            <p className="text-lg text-white">
+            <p className="text-lg text-center text-white">
               If you have any inquiries, collaborations, or simply want to
               connect, I would be delighted to hear from you. Whether you have a
               project in mind, a question about my work, or just want to say
               hello, please feel free to reach out to me via email.
             </p>
-            <button className="rounded-full w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+            <button className="rounded-full w-full sm:w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
               <a href="mailto:"> talk to me </a>
             </button>
           </div>

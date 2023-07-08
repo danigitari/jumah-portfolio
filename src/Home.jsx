@@ -23,7 +23,6 @@ import "swiper/css/navigation";
 function Home() {
   return (
     <>
-   
       <Link
         to="home"
         className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
@@ -90,8 +89,7 @@ function Home() {
               </div>
             </div>
             <div
-              className=" hidden md:flex absolute right-0 h-screen bg-no-repeat bg-contain w-screen
-         "
+              className=" hidden md:flex absolute right-0 h-screen bg-no-repeat bg-contain w-screen "
               id="home"
             >
               <div className=" hidden md:flex w-full h-full bg-[#000007] ">
@@ -125,10 +123,7 @@ function Home() {
                   delaySpeed={1000}
                 />
               </div>{" "}
-              <div className="py-2 text-lg">
-                {" "}
-               
-              </div>
+              <div className="py-2 text-lg"> </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
               {" "}
@@ -170,10 +165,7 @@ function Home() {
                   delaySpeed={1000}
                 />
               </div>{" "}
-              <div className="py-2 text-lg">
-                {" "}
-           
-              </div>
+              <div className="py-2 text-lg"> </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
               {" "}
@@ -465,24 +457,33 @@ function Home() {
           <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-20">
             Resource Cloud Academy
           </div>
-          <div className="flex flex-col md:flex-row w-full ">
-            <p className="text-white p-10">
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sit
-              ipsa. Hic velit quibusdam beatae eius quis culpa animi iste,
-              fugiat et. Vel voluptatibus pariatur repellat veniam alias
-              accusantium deleniti. Natus veritatis officia porro nulla at sed
-              nostrum eius facere adipisci? Animi excepturi nostrum aliquam
-              nesciunt corporis modi voluptas iusto!{" "}
-            </p>
-            <div className="p-10 text-lg">
+          <div className="grid place-items-center">
+            <p className=" w-3/5 text- text-white mb-10 "></p>
+            {/* <div className="p-10 text-lg">
               <Video autoPlay muted="muted" loop>
                 <source src="Juma.mp4" type="video/webm" />
               </Video>
-            </div>
+            </div> */}
           </div>
-          <div className="flex flex-col md:flex-row w-full ">
-            <div className="w-full md:w-1/2  z-60 pl-20 pr-10 pb-10 ">
+          <div className="flex flex-col gap-x-10 row-span-4 md:flex-row  h-full">
+            <div className="w-full md:w-1/2 text-white pl-10 text-md font-light h-full">
+              <p>
+                Resource Cloud Academy is an elite community of tech enthusiasts
+                that focuses on equipping individuals with the necessary skills
+                and experience needed to start or develop their careers in cloud
+                computing. Our vision is to bridge the gap between the industry
+                and the relevant skills needed by the future generation of
+                global technology leaders through early career interventions.
+                Our main audience is students who are still in university, and
+                we empower them to use their time wisely.
+              </p>
+              <a href="https://www.linkedin.com/company/resource-cloud-academy/">
+                <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+                  Learn More
+                </button>
+              </a>
+            </div>
+            <div className=" grid place-items-center w-full md:w-1/2  z-60  lg:pr-20 ">
               <img
                 src="resource.JPG "
                 className="w-full h-96 object-contain"
@@ -490,6 +491,9 @@ function Home() {
                 type="image/webp"
               />
             </div>
+          </div>
+          {/* <div className="flex flex-col md:flex-row w-full ">
+            <div className="w-full md:w-1/2  z-60 pl-20 pr-10 pb-10 "></div>
             <div className="w-full md:w-1/2  z-60 pl-20 pb-10 pr-10 ">
               <img
                 src="resource2.jpg"
@@ -498,55 +502,26 @@ function Home() {
                 type="image/webp"
               />
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className=" grid  bg-[#000006] pt-10 " id="contact">
-          <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading w-32 ">
-            Contact
-          </div>
-          <div className="grid grid-rows-3 md:grid-cols-3 text-xl text-white pl-10">
-            <div className="row-span-1 md:col-span-1">
-              {" "}
-              <div className=" pt-5">
-                <p className="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>
-                <div className="py-2 text-gray-200 xs:px-10">
-                  <span className="font-bold pr-5"> Email : </span>{" "}
-                  jamesjumah@gmail.com
-                </div>
-                <div className="py-2 text-gray-200 xs:px-10">
-                  <span className="font-bold pr-5"> Phone : </span> +254 7111
-                  111
-                </div>
-              </div>
-            </div>{" "}
-            <div className="row-span-2 md:col-span-2 pt-10  pl-5 md:ml-10 max-w-screen">
-              <input
-                className="border-slate-200 md:mr-5 block md:inline mb-5 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
-                type="text"
-                name=""
-                id=""
-                placeholder="Name"
-              />
-              <input
-                className="border-slate-200 ml-0  block md:inline mb-5 md:ml-10 text-gray-700 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
-                type="text"
-                name=""
-                id=""
-                placeholder="Email"
-              />
-              <div className="">
-                {" "}
-                <textarea
-                  className="border-slate-200 mt-10 text-gray-700 placeholder-slate-400 h-48 w-64 md:w-[580px] contrast-more:border-slate-400 contrast-more:placeholder-slate-500 p-2"
-                  name=""
-                  id=""
-                  placeholder="Message"
-                ></textarea>
-                <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] block hover:bg-blue-500 ease-in duration-300 ">
-                  Submit
-                </button>
-              </div>
+        <div
+          className="justify-center w-full grid place-items-center h-screen
+           bg-[#000006] pt-10 "
+          id="contact"
+        >
+          <div className="w-1/2 grid  place-items-center">
+            <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading ">
+              GET IN TOUCH
             </div>
+            <p className="text-lg text-white">
+              If you have any inquiries, collaborations, or simply want to
+              connect, I would be delighted to hear from you. Whether you have a
+              project in mind, a question about my work, or just want to say
+              hello, please feel free to reach out to me via email.
+            </p>
+            <button className="rounded-full w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+              <a href="mailto:"> talk to me </a>
+            </button>
           </div>
         </div>
       </div>

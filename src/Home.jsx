@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import {
   AiOutlineMenu,
@@ -6,11 +6,10 @@ import {
   AiFillLinkedin,
   AiOutlineTwitter,
   AiOutlineMail,
+  AiOutlineClose,
 } from "react-icons/ai";
 import { Link } from "react-scroll";
 import "./index.css";
-import { DefaultPlayer as Video } from "react-html5video";
-import "react-html5video/dist/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFlip, Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -18,8 +17,8 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
 function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Link
@@ -85,8 +84,40 @@ function Home() {
                   Contact
                 </Link>
               </div>
-              <div className="flex  md:hidden text-2xl font-bold py-2 ">
+              <div
+                className="flex  md:hidden text-2xl font-bold py-2  "
+                onClick={() => setOpen(!open)}
+              >
                 <AiOutlineMenu />
+              </div>
+              <div
+                className={` ${
+                  open ? " translate-x-0" : " translate-x-[-250px]"
+                } absolute  lg:hidden transition duration-300 ease-in w-[250px] h-screen bg-[#000007] `}
+              >
+                <div className="flex flex-col text-white ">
+                  <div
+                    className="flex justify-end  md:hidden text-2xl font-bold py-5 px-5 "
+                    onClick={() => setOpen(!open)}
+                  >
+                    <AiOutlineClose />
+                  </div>
+                  <a href="#home" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                    Home
+                  </a>
+                  <a href="#about" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                    About
+                  </a>
+                  <a href="" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                    Blog
+                  </a>
+                  <a href="#rca" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                    Mentorship
+                  </a>
+                  <a href="#contact" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                    Contact
+                  </a>
+                </div>
               </div>
             </div>
             <div

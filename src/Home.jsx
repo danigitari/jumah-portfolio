@@ -86,7 +86,6 @@ function Home() {
                 </Link>
               </div>
               <div className="flex  md:hidden text-2xl font-bold py-2 ">
-                
                 <AiOutlineMenu />
               </div>
             </div>
@@ -94,9 +93,7 @@ function Home() {
               className=" hidden md:flex absolute right-0 h-screen bg-no-repeat bg-contain w-screen "
               id="home"
             >
-              <div className=" hidden md:flex w-full h-full bg-[#000007] ">
-                
-              </div>
+              <div className=" hidden md:flex w-full h-full bg-[#000007] "></div>
               <img
                 src="jumah3.png"
                 alt=""
@@ -128,12 +125,12 @@ function Home() {
               <div className="py-2 text-lg"> </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
-              
               <span className=" flex space-x-6">
-                
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiFillLinkedin />
-                </p>
+                <a href="https://www.linkedin.com/in/james-juma-sindani/">
+                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                    <AiFillLinkedin />
+                  </p>
+                </a>
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
                   <AiOutlineTwitter />
                 </p>
@@ -144,7 +141,6 @@ function Home() {
             </div>
           </div>
           <div className=" absolute z-30 md:hidden text-3xl font-bold bg-[#000006] w-full text-white pl-5 -translate-y-20 md:translate-y-0">
-            
             Hello
             <h1 className="py-2 leading-10 "> I'm James Juma Sindani.</h1>
             <h1 className="font-bold py-0 md:py-2 w-1/2 text-white">
@@ -166,17 +162,22 @@ function Home() {
               </div>
             </h1>
             <div className=" socials w-1/2 py-5 text-3xl font-bold">
-              
               <span className=" flex space-x-6">
-                <p className=" ease-in duration-200   ">
-                  <AiOutlineMail/>
-                </p>
-                <p className=" ease-in duration-200  ">
-                  <AiFillLinkedin />
-                </p>
-                <p className=" ease-in duration-200 sm:scale-150  ">
-                  <AiOutlineTwitter />
-                </p>
+                <a href="mailto:">
+                  <p className=" ease-in duration-200   ">
+                    <AiOutlineMail />
+                  </p>
+                </a>
+                <a href="https://www.linkedin.com/in/james-juma-sindani/">
+                  <p className=" ease-in duration-200  ">
+                    <AiFillLinkedin />
+                  </p>
+                </a>
+                <a href="https://twitter.com/Juma_14910">
+                  <p className=" ease-in duration-200 sm:scale-150  ">
+                    <AiOutlineTwitter />
+                  </p>
+                </a>
               </span>
             </div>
           </div>
@@ -187,7 +188,6 @@ function Home() {
           id="about"
         >
           <div className="text-white text-3xl text-center justify-self-start sm:justify-self-center  py-5 font-bold heading w-36 mb-0 lg:mb-20">
-            
             About Me
           </div>
           <div className="flex flex-col gap-x-10 lg:flex-row  h-full">
@@ -224,21 +224,15 @@ function Home() {
         </div>
         <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
           <p className="text-white text-3xl  py-5 font-bold heading pb-10">
-            
             Work Experience
           </p>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
-              
-              June 2022 <p className="inline px-5 text-2xl font-bold  ">
-                
-                -
-              </p>
+              June 2022 <p className="inline px-5 text-2xl font-bold  ">-</p>
               Present
             </div>
             <div className=" text-white w-full text-lg font-semibold px-20">
-              
               Cloud Solutions Architect -
               <p className="text-md font-light"> Silicon Overdrive</p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
@@ -257,7 +251,6 @@ function Home() {
                 <br />
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
-                  
                   aws
                 </button>
               </p>
@@ -266,15 +259,12 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
-              
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> Present
             </div>
             <div className=" text-white w-full text-lg font-semibold px-20">
-              
               Co-Founder & Partnership Manager -
               <p className="text-md font-light">
-                
                 Resource Cloud Academy · Full-time
               </p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
@@ -286,15 +276,12 @@ function Home() {
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   aws
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
-                  
                   linux
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
-                  
                   Microsoft Azure
                 </button>
               </p>
@@ -303,15 +290,12 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
-              
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
             <div className=" pt-5 md:pt-10 text-white w-full  text-lg font-semibold px-20">
-              
               Cloud Engineer -
               <p className="text-md font-light">
-                
                 Spartec Consortium-Africa (SCA) Limited
               </p>
               <p className="text-sm font-light pt-4 md:pt-10 md:pr-20 text-gray-500">
@@ -326,23 +310,18 @@ function Home() {
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   Office 365
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   VMware
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   Palo alto
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   Microsft Teams
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   Microsoft Azure
                 </button>
               </p>
@@ -351,15 +330,12 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
-              
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
             <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
-              
               AWS Architect -
               <p className="text-md font-light">
-                
                 Azubi Africa · Apprenticeship
               </p>
               <p className="text-sm font-light pt-4 md:pt-10 text-gray-500 md:pr-20">
@@ -373,7 +349,6 @@ function Home() {
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  
                   aws
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
@@ -450,7 +425,6 @@ function Home() {
               className="mySwiper"
             >
               <SwiperSlide>
-                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/9st7RVY7kdA"
@@ -459,7 +433,6 @@ function Home() {
                 ></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/btA7H5m6sIQ"
@@ -468,7 +441,6 @@ function Home() {
                 ></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/tyFfmFSAQwQ"
@@ -578,19 +550,23 @@ function Home() {
             <div className="pt-20 lg:mt-20 bottom-0 ">
               <div className="w-full md-w-1/4 grid place-items-center">
                 <div className="flex text-white text-3xl gap-x-6">
-                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                    <AiFillLinkedin />
-                  </p>
-                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                    <AiOutlineTwitter />
-                  </p>
-                  <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                    <AiOutlineMail />
-                  </p>
+                  <a href="https://www.linkedin.com/in/james-juma-sindani/">
+                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                      <AiFillLinkedin />
+                    </p>
+                  </a>
+                  <a href="https://twitter.com/Juma_14910">
+                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                      <AiOutlineTwitter />
+                    </p>
+                  </a>
+                  <a href="mailto:">
+                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                      <AiOutlineMail />
+                    </p>
+                  </a>
                 </div>
-                <p className="text-white pt-5 ">
-                  James Jumah Sindani • © 2023
-                </p>
+                <p className="text-white pt-5 ">James Jumah Sindani • © 2023</p>
               </div>
             </div>
           </div>

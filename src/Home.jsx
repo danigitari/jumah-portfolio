@@ -86,8 +86,8 @@ function Home() {
                 </Link>
               </div>
               <div className="flex  md:hidden text-2xl font-bold py-2 ">
-                {" "}
-                <AiOutlineMenu />{" "}
+                
+                <AiOutlineMenu />
               </div>
             </div>
             <div
@@ -95,18 +95,18 @@ function Home() {
               id="home"
             >
               <div className=" hidden md:flex w-full h-full bg-[#000007] ">
-                {" "}
+                
               </div>
               <img
                 src="jumah3.png"
                 alt=""
-                className="flex h-full right-0  pt-0 md:pt-10 bg-[#000006]"
+                className="flex h-full right-0  pt-0 md:pt-10 bg-[#000006] "
               />
             </div>
             <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
           </div>
           <div className=" hidden md:block w-1/2 absolute  md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-[44px] leading-4 md:leading-10 bg-[#181822] font-bold p-10 ">
-            Hello{" "}
+            Hello
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
               <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-400 leading-10">
@@ -124,29 +124,29 @@ function Home() {
                   deleteSpeed={50}
                   delaySpeed={1000}
                 />
-              </div>{" "}
+              </div>
               <div className="py-2 text-lg"> </div>
             </h1>
             <div className=" socials w-1/2 py-5 ">
-              {" "}
+              
               <span className=" flex space-x-6">
-                {" "}
+                
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiFillLinkedin />{" "}
+                  <AiFillLinkedin />
                 </p>
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiOutlineTwitter />{" "}
+                  <AiOutlineTwitter />
                 </p>
                 <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
-                  <AiOutlineMail />{" "}
+                  <AiOutlineMail />
                 </p>
-              </span>{" "}
+              </span>
             </div>
           </div>
-          <div className=" absolute z-30 md:hidden text-xl font-bold bg-[#000006] w-full text-white pl-5 -translate-y-20 md:translate-y-0">
-            {" "}
-            Hello{" "}
-            <div className="py-2 leading-10"> I'm James Juma Sindani.</div>
+          <div className=" absolute z-30 md:hidden text-3xl font-bold bg-[#000006] w-full text-white pl-5 -translate-y-20 md:translate-y-0">
+            
+            Hello
+            <h1 className="py-2 leading-10 "> I'm James Juma Sindani.</h1>
             <h1 className="font-bold py-0 md:py-2 w-1/2 text-white">
               <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-500 leading-10">
                 {/* Style will be inherited from the parent element */}
@@ -163,31 +163,32 @@ function Home() {
                   deleteSpeed={50}
                   delaySpeed={1000}
                 />
-              </div>{" "}
-              <div className="py-2 text-lg"> </div>
+              </div>
             </h1>
-            <div className=" socials w-1/2 py-5 ">
-              {" "}
+            <div className=" socials w-1/2 py-5 text-3xl font-bold">
+              
               <span className=" flex space-x-6">
-                {" "}
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200  sm:scale-150 sm:hover:scale-[1.7]">
-                  <AiFillLinkedin />{" "}
+                <p className=" ease-in duration-200   ">
+                  <AiOutlineMail/>
                 </p>
-                <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 sm:scale-150 sm:hover:scale-[1.7]">
-                  <AiOutlineTwitter />{" "}
+                <p className=" ease-in duration-200  ">
+                  <AiFillLinkedin />
                 </p>
-              </span>{" "}
+                <p className=" ease-in duration-200 sm:scale-150  ">
+                  <AiOutlineTwitter />
+                </p>
+              </span>
             </div>
           </div>
         </div>
 
         <div
-          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[100px] md:translate-y-0"
+          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[200px] md:translate-y-0"
           id="about"
         >
           <div className="text-white text-3xl text-center justify-self-start sm:justify-self-center  py-5 font-bold heading w-36 mb-0 lg:mb-20">
-            {" "}
-            About Me{" "}
+            
+            About Me
           </div>
           <div className="flex flex-col gap-x-10 lg:flex-row  h-full">
             <div className="w-full lg:w-1/2 text-white pr-10 text-md font-light h-full">
@@ -211,7 +212,7 @@ function Home() {
                 Download CV
               </button>
             </div>
-            <div className="w-full lg:w-1/2  z-60  pr-20 ">
+            <div className="w-full lg:w-1/2 z-60  pr-5 md:pr-20 ">
               <img
                 src="awshackathon5.jpg"
                 className="w-full h-96 object-cover  "
@@ -223,22 +224,22 @@ function Home() {
         </div>
         <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
           <p className="text-white text-3xl  py-5 font-bold heading pb-10">
-            {" "}
-            Work Experience{" "}
+            
+            Work Experience
           </p>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
-              {" "}
+              
               June 2022 <p className="inline px-5 text-2xl font-bold  ">
-                {" "}
-                -{" "}
-              </p>{" "}
+                
+                -
+              </p>
               Present
             </div>
             <div className=" text-white w-full text-lg font-semibold px-20">
-              {" "}
-              Cloud Solutions Architect -{" "}
+              
+              Cloud Solutions Architect -
               <p className="text-md font-light"> Silicon Overdrive</p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
                 I participate in architectural discussions to ensure solutions
@@ -256,24 +257,24 @@ function Home() {
                 <br />
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
-                  {" "}
-                  aws{" "}
+                  
+                  aws
                 </button>
-              </p>{" "}
+              </p>
             </div>
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
-              {" "}
-              January 2022{" "}
+              
+              January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> Present
             </div>
             <div className=" text-white w-full text-lg font-semibold px-20">
-              {" "}
-              Co-Founder & Partnership Manager -{" "}
+              
+              Co-Founder & Partnership Manager -
               <p className="text-md font-light">
-                {" "}
+                
                 Resource Cloud Academy · Full-time
               </p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
@@ -281,36 +282,36 @@ function Home() {
                 up. I also lead the community in doing cloud related projects on
                 AWS and Azure Clouds.
                 <br />
-                <br />{" "}
+                <br />
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  aws{" "}
+                  
+                  aws
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
-                  {" "}
-                  linux{" "}
+                  
+                  linux
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72] mr-2 mt-2">
-                  {" "}
-                  Microsoft Azure{" "}
+                  
+                  Microsoft Azure
                 </button>
-              </p>{" "}
+              </p>
             </div>
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
-              {" "}
-              January 2022{" "}
+              
+              January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
             <div className=" pt-5 md:pt-10 text-white w-full  text-lg font-semibold px-20">
-              {" "}
-              Cloud Engineer -{" "}
+              
+              Cloud Engineer -
               <p className="text-md font-light">
-                {" "}
+                
                 Spartec Consortium-Africa (SCA) Limited
               </p>
               <p className="text-sm font-light pt-4 md:pt-10 md:pr-20 text-gray-500">
@@ -321,44 +322,44 @@ function Home() {
                 skills in Cloud Security procedures. • Took part in setting up
                 of office 365 to clients
                 <br />
-                <br />{" "}
+                <br />
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  Office 365{" "}
+                  
+                  Office 365
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  VMware{" "}
+                  
+                  VMware
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  Palo alto{" "}
+                  
+                  Palo alto
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  Microsft Teams{" "}
+                  
+                  Microsft Teams
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
+                  
                   Microsoft Azure
                 </button>
-              </p>{" "}
+              </p>
             </div>
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
-              {" "}
-              January 2022{" "}
+              
+              January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
             <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
-              {" "}
-              AWS Architect -{" "}
+              
+              AWS Architect -
               <p className="text-md font-light">
-                {" "}
+                
                 Azubi Africa · Apprenticeship
               </p>
               <p className="text-sm font-light pt-4 md:pt-10 text-gray-500 md:pr-20">
@@ -368,17 +369,17 @@ function Home() {
                 of AWS Well-Architected Framework and the AWS global
                 infrastructure
                 <br />
-                <br />{" "}
+                <br />
                 <span className="font-bold text-white mt-4">Skills </span>
                 <br />
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
-                  {" "}
-                  aws{" "}
+                  
+                  aws
                 </button>
                 <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  mt-2 mr-2">
                   linux
                 </button>
-              </p>{" "}
+              </p>
             </div>
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
@@ -449,7 +450,7 @@ function Home() {
               className="mySwiper"
             >
               <SwiperSlide>
-                {" "}
+                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/9st7RVY7kdA"
@@ -458,7 +459,7 @@ function Home() {
                 ></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
+                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/btA7H5m6sIQ"
@@ -467,7 +468,7 @@ function Home() {
                 ></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
+                
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
                   src="https://www.youtube.com/embed/tyFfmFSAQwQ"
@@ -490,7 +491,7 @@ function Home() {
               src="https://www.youtube.com/embed/btA7H5m6sIQ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>{" "}
+            ></iframe>
             <iframe
               className="w-[300px] h-[300px]  m-10"
               src="https://www.youtube.com/embed/tyFfmFSAQwQ"
@@ -518,7 +519,7 @@ function Home() {
           </div>
           <div className="flex flex-col gap-x-10 row-span-4 lg:flex-row  h-full">
             <div className="w-full lg:w-1/2 text-white pl-10 text-md font-light h-full grid place-items-center">
-              <p className="text-center lg:text-left w-1/2 lg:w-full px-10 ">
+              <p className="text-center lg:text-left w-full md:w-4/5 px-10 ">
                 Resource Cloud Academy is an elite community of tech enthusiasts
                 that focuses on equipping individuals with the necessary skills
                 and experience needed to start or develop their careers in cloud
@@ -588,7 +589,7 @@ function Home() {
                   </p>
                 </div>
                 <p className="text-white pt-5 ">
-                  James Jumah Sindani • © 2023{" "}
+                  James Jumah Sindani • © 2023
                 </p>
               </div>
             </div>

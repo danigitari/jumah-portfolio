@@ -27,7 +27,7 @@ function Home() {
         spy={true}
         smooth={true}
         offset={0}
-        className="fixed  z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
+        className="fixed z-40 scroll-up h-12 w-12  font-bold text-xl shadow-lg rounded-full bg-[#3e2cca] text-white bottom-4 right-0 hover:scale-[1.3] duration-300 mr-5 md:mr-20 flex justify-center items-center"
       >
         <AiOutlineArrowUp className="bg-[#3e2cca]" />
       </Link>
@@ -103,7 +103,7 @@ function Home() {
                 className="flex h-full right-0  pt-0 md:pt-10 bg-[#000006] "
               />
             </div>
-            <div className="flex md:hidden bg-[url('jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
+            <div className="flex md:hidden bg-[url('../public/jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
           </div>
           <div className=" hidden md:block w-1/2 absolute  md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-[44px] leading-4 md:leading-10 bg-[#181822] font-bold p-10 ">
             Hello
@@ -215,7 +215,7 @@ function Home() {
             <div className="w-full lg:w-1/2 z-60  pr-5 md:pr-20 ">
               <img
                 src="awshackathon5.jpg"
-                className="w-full h-96 object-cover  "
+                className="w-full h-96 object-cover "
                 alt=""
                 type="image/webp"
               />
@@ -506,7 +506,7 @@ function Home() {
           className=" grid  bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0"
           id="rca"
         >
-          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-10">
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-5">
             Resource Cloud Academy
           </div>
           <div className="grid place-items-center">
@@ -517,9 +517,9 @@ function Home() {
               </Video>
             </div> */}
           </div>
-          <div className="flex flex-col gap-x-10 row-span-4 lg:flex-row  h-full">
-            <div className="w-full lg:w-1/2 text-white pl-10 text-md font-light h-full grid place-items-center">
-              <p className="text-center lg:text-left w-full md:w-4/5 px-10 ">
+          <div className="flex flex-col gap-x-10  lg:flex-row  h-full">
+            <div className="w-full lg:w-1/2 text-white pl-5 sm:pl-10 text-md font-light h-full grid place-items-center">
+              <p className="text-left sm:text-center lg:text-left w-full md:w-4/5 px-10 ">
                 Resource Cloud Academy is an elite community of tech enthusiasts
                 that focuses on equipping individuals with the necessary skills
                 and experience needed to start or develop their careers in cloud
@@ -538,7 +538,7 @@ function Home() {
             <div className=" grid place-items-center w-full lg:w-1/2  z-60  lg:pr-20 ">
               <img
                 src="resource.JPG "
-                className="w-full h-96 object-contain"
+                className="w-full h-96 object-contain p-5"
                 alt=""
                 type="image/webp"
               />

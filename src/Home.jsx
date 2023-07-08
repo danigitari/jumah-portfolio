@@ -182,7 +182,7 @@ function Home() {
         </div>
 
         <div
-          className="grid grid-rows-4 pl-5 md:pl-20 bg-[#000006] pt-20 h-full"
+          className="grid grid-rows-4 pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[100px] md:translate-y-0"
           id="about"
         >
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-36 mb-20">
@@ -384,13 +384,56 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
         </div>
 
-        <div className=" grid  bg-[#000006] pt-20 " id="cerifications">
+        <div
+          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
+          id="cerifications"
+        >
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
           </div>
+          <div className="flex flex-wrap justify-center gap-4 ">
+            
+              <img src="ccp.jpeg" className="" alt="" type="image/webp" />
+          
+            
+              <img src=" ssa.jpeg" className=" " alt="" type="image/webp" />
+        
+            <img
+              src="ssa.jpeg"
+              className="object-contain h-48 md:h-56 "
+              alt=""
+              type="image/webp"
+            />
+
+            
+              <img
+                src="sysops.jpg"
+                className="object-contain h-48 md:h-56 "
+                alt=""
+                type="image/webp"
+              />
+            
+            
+              <img
+                src="azure-admin.png"
+                className=" "
+                alt=""
+                type="image/webp"
+              />
+            
+            <img
+              src="cka.jpg"
+              className="object-contain h-48 md:h-56 "
+              alt=""
+              type="image/webp"
+            />
+          </div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 w-full " id="cerifications">
-          <div className="text-white text-3xl text-center  justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+        <div
+          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
+          id="cerifications"
+        >
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Talks I've Done
           </div>
           <div className="hidden lg:flex md:flex-wrap w-full">
@@ -452,8 +495,11 @@ function Home() {
 
           <div className=" mt-10 space-x-6 mx-20"></div>
         </div>
-        <div className=" grid  bg-[#000006] pt-20 " id="rca">
-          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-20">
+        <div
+          className=" grid  bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0"
+          id="rca"
+        >
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-10">
             Resource Cloud Academy
           </div>
           <div className="grid place-items-center">
@@ -505,7 +551,7 @@ function Home() {
         </div>
         <div
           className="justify-center w-full grid place-items-center h-screen
-           bg-[#000006] pt-10 "
+           bg-[#000006] pt-10 translate-y-[200px] md:translate-y-0"
           id="contact"
         >
           <div className="w-full md:w-1/2 grid  place-items-center px-5">

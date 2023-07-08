@@ -182,14 +182,14 @@ function Home() {
         </div>
 
         <div
-          className="grid grid-rows-4 pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[100px] md:translate-y-0"
+          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[100px] md:translate-y-0"
           id="about"
         >
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-36 mb-20">
+          <div className="text-white text-3xl text-center justify-self-start sm:justify-self-center  py-5 font-bold heading w-36 mb-0 lg:mb-20">
             {" "}
             About Me{" "}
           </div>
-          <div className="flex flex-col gap-x-10 row-span-4 lg:flex-row  h-full">
+          <div className="flex flex-col gap-x-10 lg:flex-row  h-full">
             <div className="w-full lg:w-1/2 text-white pr-10 text-md font-light h-full">
               <p>
                 I am a passionate cloud enthusiast and AWS Solutions Architect
@@ -385,45 +385,51 @@ function Home() {
         </div>
 
         <div
-          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
+          className=" grid place-items-center  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
           id="cerifications"
         >
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
           </div>
-          <div className="flex flex-wrap justify-center gap-4 ">
-            
-              <img src="ccp.jpeg" className="" alt="" type="image/webp" />
-          
-            
-              <img src=" ssa.jpeg" className=" " alt="" type="image/webp" />
-        
+          <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
             <img
-              src="ssa.jpeg"
-              className="object-contain h-48 md:h-56 "
+              src="ccp.jpeg"
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3"
               alt=""
               type="image/webp"
             />
 
-            
-              <img
-                src="sysops.jpg"
-                className="object-contain h-48 md:h-56 "
-                alt=""
-                type="image/webp"
-              />
-            
-            
-              <img
-                src="azure-admin.png"
-                className=" "
-                alt=""
-                type="image/webp"
-              />
-            
+            <img
+              src=" ssa.jpeg"
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3"
+              alt=""
+              type="image/webp"
+            />
+
+            <img
+              src="ssa.jpeg"
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3"
+              alt=""
+              type="image/webp"
+            />
+
+            <img
+              src="sysops.jpg"
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3"
+              alt=""
+              type="image/webp"
+            />
+
+            <img
+              src="azure-admin.png"
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3 "
+              alt=""
+              type="image/webp"
+            />
+
             <img
               src="cka.jpg"
-              className="object-contain h-48 md:h-56 "
+              className="object-contain h-48 md:h-56 w-full lg:w-1/3"
               alt=""
               type="image/webp"
             />
@@ -551,7 +557,7 @@ function Home() {
         </div>
         <div
           className="justify-center w-full grid place-items-center h-screen
-           bg-[#000006] pt-10 translate-y-[200px] md:translate-y-0"
+           bg-[#000006] pt-10  mt-20 translate-y-[200px] md:translate-y-0"
           id="contact"
         >
           <div className="w-full md:w-1/2 grid  place-items-center px-5">

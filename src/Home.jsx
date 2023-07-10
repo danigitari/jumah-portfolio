@@ -81,7 +81,7 @@ function Home() {
                   offset={50}
                   className="hover:text-lg hover:scale-[1.1] ease-in duration-200 hover:cursor-pointer flex items-center rounded-full bg-[#3e2cca] px-6 my-1 "
                 >
-                  Contact
+                  Get in Touch
                 </Link>
               </div>
               <div
@@ -155,7 +155,7 @@ function Home() {
               </div>
               <div className="py-2 text-lg"> </div>
             </h1>
-            <div className=" socials w-1/2 py-5 ">
+            <div className=" socials w-1/2 py-10">
               <span className=" flex space-x-6">
                 <a href="https://www.linkedin.com/in/james-juma-sindani/">
                   <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
@@ -549,15 +549,15 @@ function Home() {
           </div>
           {/* <div className="flex flex-col md:flex-row w-full ">
             <div className="w-full md:w-1/2  z-60 pl-20 pr-10 pb-10 "></div>
-            <div className="w-full md:w-1/2  z-60 pl-20 pb-10 pr-10 ">
-              <img
-                src="resource2.jpg"
-                className="w-full h-96 object-contain "
-                alt=""
-                type="image/webp"
-              />
-            </div>
-          </div> */}
+              <div className="w-full md:w-1/2  z-60 pl-20 pb-10 pr-10 ">
+                <img
+                  src="resource2.jpg"
+                  className="w-full h-96 object-contain "
+                  alt=""
+                  type="image/webp"
+                />
+              </div>
+            </div> */}
         </div>
         <div
           className="justify-center w-full grid place-items-center h-screen

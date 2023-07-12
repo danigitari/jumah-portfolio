@@ -137,7 +137,7 @@ function Home() {
             Hello
             <div className="py-2 leading-10 "> I'm James Juma Sindani.</div>
             <h1 className="font-bold py-0 md:py-2 text-white">
-              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-400 leading-10">
+              <div className="text-2xl md:text-[38px] py-0 md:py-2 text-bold text-gray-400 leading-10 h-10">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -155,7 +155,7 @@ function Home() {
               </div>
               <div className="py-2 text-lg"> </div>
             </h1>
-            <div className=" socials w-1/2 py-10">
+            <div className=" socials w-1/2 py-10 ">
               <span className=" flex space-x-6">
                 <a href="https://www.linkedin.com/in/james-juma-sindani/">
                   <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
@@ -246,7 +246,7 @@ function Home() {
             <div className="w-full lg:w-1/2 z-60  pr-5 md:pr-20 ">
               <img
                 src="awshackathon5.jpg"
-                className="w-full h-96 object-cover "
+                className="w-full h-[450px] object-contain "
                 alt=""
                 type="image/webp"
               />

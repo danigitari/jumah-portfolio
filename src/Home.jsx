@@ -37,7 +37,7 @@ function Home() {
               <div className="text-lg md:text-3xl font-bold py-2 pl-5  md:pl-20 ">
                 James Juma
               </div>
-              <div className="hidden md:flex justify-between w-1/2 right-0  list-none  text-lg">
+              <div className="hidden llg:flex justify-between w-1/2 right-0  list-none  text-lg">
                 <Link
                   to="home"
                   spy={true}
@@ -85,7 +85,7 @@ function Home() {
                 </Link>
               </div>
               <div
-                className="flex  md:hidden text-2xl font-bold py-2  "
+                className="flex  llg:hidden text-2xl font-bold py-2  "
                 onClick={() => setOpen(!open)}
               >
                 <AiOutlineMenu />
@@ -93,7 +93,7 @@ function Home() {
               <div
                 className={` ${
                   open ? " translate-x-0" : " translate-x-[-250px]"
-                } absolute  lg:hidden transition duration-300 ease-in w-[250px] h-screen bg-[#000007] `}
+                } absolute  llg:hidden transition duration-300 ease-in w-[250px] h-screen bg-[#000007] `}
               >
                 <div className="flex flex-col text-white ">
                   <div

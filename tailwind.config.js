@@ -8,6 +8,7 @@ export default {
       smd: "700px",
       md: "800px",
       lg: "976px",
+      llg: "1040px",
       xl: "1440px",
       "2xl": "1536px",
     },
@@ -19,4 +20,3 @@ export default {
   },
   plugins: [],
 };
-

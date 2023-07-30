@@ -617,7 +617,7 @@ function Home() {
                     </p>
                   </a>
                 </div>
-                <p className="text-white pt-5 ">James Jumah Sindani • © 2023</p>
+                <p className="text-white pt-5 ">James Juma Sindani • © 2023</p>
               </div>
             </div>
           </div>

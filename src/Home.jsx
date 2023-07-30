@@ -102,19 +102,39 @@ function Home() {
                   >
                     <AiOutlineClose />
                   </div>
-                  <a href="#home" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                  <a
+                    href="#home"
+                    className=" border-b-2 border-white p-10"
+                    onClick={() => setOpen(false)}
+                  >
                     Home
                   </a>
-                  <a href="#about" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                  <a
+                    href="#about"
+                    className=" border-b-2 border-white p-10"
+                    onClick={() => setOpen(false)}
+                  >
                     About
                   </a>
-                  <a href="" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                  <a
+                    href=""
+                    className=" border-b-2 border-white p-10"
+                    onClick={() => setOpen(false)}
+                  >
                     Blog
                   </a>
-                  <a href="#rca" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                  <a
+                    href="#rca"
+                    className=" border-b-2 border-white p-10"
+                    onClick={() => setOpen(false)}
+                  >
                     Mentorship
                   </a>
-                  <a href="#contact" className=" border-b-2 border-white p-10" onClick={() => setOpen(false)}>
+                  <a
+                    href="#contact"
+                    className=" border-b-2 border-white p-10"
+                    onClick={() => setOpen(false)}
+                  >
                     Contact
                   </a>
                 </div>
@@ -141,9 +161,9 @@ function Home() {
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
-                    "AWS SYSTEM ADMINISTRATOR",
-                    "NETWORK ENGINEER",
-                    "CO-FOUNDER @RCA",
+                    "AWS SOLUTIONS ARCHITECT",
+                    "CO-FOUNDER  @RCA",
+                    "PARTNERSHIPS MANAGER @RCA",
                   ]}
                   loop={5555}
                   cursor

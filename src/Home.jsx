@@ -458,13 +458,13 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
         </div>
 
-        <div
+        {/* <div
           className=" grid place-items-center  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
           id="cerifications"
-        >
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+        > */}
+          {/* <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
-          </div>
+          </div> */}
           {/* <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
             <img
               src="ccp.jpeg"
@@ -508,7 +508,7 @@ function Home() {
               type="image/webp"
             />
           </div> */}
-        </div>
+        {/* </div> */}
         <div
           className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
           id="cerifications"
@@ -620,7 +620,7 @@ function Home() {
                     href="#"
                     className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
                   >
-                    <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+                    <a href="https://www.linkedin.com/pulse/azubi-africa-cloud-wave-james-juma-sindani" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 " target="_blank"> Read More  </a>
 
                     <span className="ml-1 p-5 text-white">7 min read</span>
                   </span>
@@ -783,9 +783,9 @@ function Home() {
               </Video>
             </div> */}
           </div>
-          <div className="flex flex-col gap-x-10  lg:flex-row  h-full">
-            <div className="w-full lg:w-1/2 text-white pl-5 sm:pl-10 text-md font-light h-full grid place-items-center">
-              <p className="text-left sm:text-center lg:text-left w-full md:w-4/5 px-10 ">
+          <div className="flex flex-col gap-x-8  lg:flex-row  h-full">
+            <div className="w-full lg:w-1/2 text-white pl-5 sm:pl-10 text-md font-light h-full pt-20 grid place-items-center">
+              <p className="text-left sm:text-center lg:text-left w-full md:w-4/5 px-5 ">
                 Resource Cloud Academy is an elite community of tech enthusiasts
                 that focuses on equipping individuals with the necessary skills
                 and experience needed to start or develop their careers in cloud
@@ -838,29 +838,29 @@ function Home() {
               hello, please feel free to reach out to me via email.
             </p>
             <button className="rounded-full w-full sm:w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
-              <a href="mailto:"> Talk to me </a>
+              <a href="mailto:" className="bg-inherit"> Talk to me </a>
             </button>
 
             <div className="pt-20 lg:mt-20 bottom-0 ">
-              <div className="w-full md-w-1/4 grid place-items-center">
-                <div className="flex text-white text-3xl gap-x-6">
-                  <a href="https://www.linkedin.com/in/james-juma-sindani/">
-                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+              <div className="w-full md-w-1/4 grid place-items-center bg-[#000006] ">
+                <div className="flex bg-[#000006] text-white text-3xl pb-10 gap-x-6">
+                  <a href="https://www.linkedin.com/in/james-juma-sindani/" target="_blank">
+                    <p className="hover:scale-[2] hover:text-[#b5b0d8] ease-in duration-200 px-3 scale-150">
                       <AiFillLinkedin />
                     </p>
                   </a>
-                  <a href="https://twitter.com/Juma_14910">
-                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <a href="https://twitter.com/Juma_14910" target="_blank">
+                    <p className="hover:scale-[2] hover:text-[#b5b0d8] ease-in duration-200 px-3 scale-150">
                       <AiOutlineTwitter />
                     </p>
                   </a>
-                  <a href="mailto:">
-                    <p className="hover:scale-[1.2] hover:text-[#b5b0d8] ease-in duration-200 ">
+                  <a href="mailto:" >
+                    <p className="hover:scale-[2] hover:text-[#b5b0d8] ease-in duration-200 px-3 scale-150">
                       <AiOutlineMail />
                     </p>
                   </a>
                 </div>
-                <p className="text-white pt-5 ">James Juma Sindani • © 2023</p>
+                <p className="text-white pt-5 bg-[#000006] pb-20 text-lg ">James Juma Sindani • © 2023</p>
               </div>
             </div>
           </div>

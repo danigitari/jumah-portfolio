@@ -588,7 +588,7 @@ function Home() {
           <div className="container text-white my-24 mx-auto md:px-6  ">
             <section className="mb-32 text-center ">
               <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img src="b1.jpg" className="w-full h-48" alt="" />
 
                   <p className="text-lg text-start py-3 px-3">
@@ -625,7 +625,7 @@ function Home() {
                     <span className="ml-1 p-5 text-white">7 min read</span>
                   </span>
                 </div>
-                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img src="b3.jpg" className="w-full h-48" alt="" />
 
                   <p className="text-lg text-start py-3 px-3">
@@ -660,7 +660,7 @@ function Home() {
                     <span className="ml-1 p-5 text-white">4 mins read</span>
                   </span>
                 </div>
-                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img src="b2.jpg" className="w-full h-48" alt="" />
 
                   <p className="text-lg text-start py-3 px-3">
@@ -715,13 +715,13 @@ function Home() {
                   <div className="mb-12 md:mb-0">
                     <div className="mb-6 flex justify-center">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                        src="/sam.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
                       />
                     </div>
-                    <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+                    <h5 className="mb-2 text-lg font-bold">Samson Wanjala</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                      Web Developer
+                      Technical Consultant @ BUI
                     </h6>
                     <p className="mb-4">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -732,13 +732,13 @@ function Home() {
                   <div className="mb-12 md:mb-0">
                     <div className="mb-6 flex justify-center">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+                        src="/albert.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
                       />
                     </div>
-                    <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+                    <h5 className="mb-2 text-lg font-bold">Albert Sitati</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                      Graphic Designer
+                      Cloud Engineer @ BUI
                     </h6>
                     <p className="mb-4">
                       Ut enim ad minima veniam, quis nostrum exercitationem
@@ -749,13 +749,13 @@ function Home() {
                   <div className="mb-0">
                     <div className="mb-6 flex justify-center">
                       <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+                        src="/awadh.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
                       />
                     </div>
-                    <h5 className="mb-2 text-lg font-bold">John Smith</h5>
+                    <h5 className="mb-2 text-lg font-bold">Awadh Said</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                      Marketing Specialist
+                      Software Developer @ Kindred
                     </h6>
                     <p className="mb-4">
                       At vero eos et accusamus et iusto odio dignissimos ducimus

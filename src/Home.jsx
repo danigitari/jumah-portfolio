@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import {
   AiOutlineMenu,
@@ -11,7 +11,10 @@ import {
 import { Link } from "react-scroll";
 import "./index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFlip, Pagination, Navigation } from "swiper";
+// import { EffectFlip, Pagination, Navigation } from "swiper";
+
+import { useInView } from "react-intersection-observer";
+
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
@@ -19,6 +22,32 @@ import "swiper/css/navigation";
 
 function Home() {
   const [open, setOpen] = useState(false);
+  const { ref, inView } = useInView();
+  const [currentlyIntersecting, setCurrentlyIntersecting] = useState(false);
+  useEffect(() => {
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+
+        // if (entry.isIntersecting) {
+        //   // console.log('I intersected')
+        //   setCurrentlyIntersecting(true);
+        // }
+        // else {
+        //   setCurrentlyIntersecting(false);
+        // }
+
+        entry.target.classList.toggle("intersecting", entry.isIntersecting);
+      }), {
+        threshold : 1
+
+      }
+    });
+
+    const Elements = document.querySelectorAll(".heading");
+    console.log(Elements)
+    Elements.forEach((el) => observer.observe(el));
+  }, []);
   return (
     <>
       <Link
@@ -97,7 +126,7 @@ function Home() {
               >
                 <div className="flex flex-col text-white ">
                   <div
-                    className="flex justify-end  md:hidden text-2xl font-bold py-5 px-5 "
+                    className="flex justify-end md:hidden text-2xl font-bold py-5 px-5 "
                     onClick={() => setOpen(!open)}
                   >
                     <AiOutlineClose />
@@ -235,7 +264,7 @@ function Home() {
         </div>
 
         <div
-          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 h-full translate-y-[200px] md:translate-y-0"
+          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0 h-[110vh]"
           id="about"
         >
           <div className="text-white text-3xl text-center justify-self-start sm:justify-self-center  py-5 font-bold heading w-36 mb-0 lg:mb-20">
@@ -274,7 +303,11 @@ function Home() {
           </div>
         </div>
         <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
-          <p className="text-white text-3xl  py-5 font-bold heading pb-10">
+          <p
+            className={` ${
+              currentlyIntersecting ? " intersecting " : " "
+            } text-white text-3xl heading py-5 font-bold pb-10 `}
+          >
             Work Experience
           </p>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
@@ -478,7 +511,7 @@ function Home() {
               <SwiperSlide>
                 <iframe
                   className="w-[300px] h-[300px]  m-10"
-                  src="https://www.youtube.com/embed/9st7RVY7kdA"
+                  src="https://www.youtube.com/embed/FyYHRPCrpMo"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 ></iframe>
@@ -521,9 +554,23 @@ function Home() {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
+            <iframe
+              className="w-[300px] h-[300px]  m-10"
+              src="https://www.youtube.com/embed/FyYHRPCrpMo"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
           </div>
 
           <div className=" mt-10 space-x-6 mx-20"></div>
+        </div>
+        <div
+          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
+          id="cerifications"
+        >
+          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading px-10 mb-20">
+            What People Say About Me
+          </div>
         </div>
         <div
           className=" grid  bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0"

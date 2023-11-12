@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./index.css";
+import "./index.css"; 
 import Home from "./Home";
 
 function App() {
@@ -7,4 +6,3 @@ function App() {
 }
 
 export default App;
-  

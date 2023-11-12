@@ -11,9 +11,6 @@ import {
 import { Link } from "react-scroll";
 import "./index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { EffectFlip, Pagination, Navigation } from "swiper";
-
-import { useInView } from "react-intersection-observer";
 
 import "swiper/css";
 import "swiper/css/effect-flip";
@@ -22,7 +19,6 @@ import "swiper/css/navigation";
 
 function Home() {
   const [open, setOpen] = useState(false);
-  const { ref, inView } = useInView();
   const [currentlyIntersecting, setCurrentlyIntersecting] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -462,10 +458,10 @@ function Home() {
           className=" grid place-items-center  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
           id="cerifications"
         > */}
-          {/* <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
+        {/* <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
           </div> */}
-          {/* <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
+        {/* <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
             <img
               src="ccp.jpeg"
               className="object-contain h-48 md:h-56 w-full lg:w-1/3"
@@ -517,48 +513,63 @@ function Home() {
             Talks I've Done
           </div>
           <div className="hidden lg:flex md:flex-wrap w-full">
-            <Swiper
-              slidesPerView={3}
-              pagination={{ clickable: true }}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <iframe
-                  className="w-[300px] h-[300px]  m-10"
-                  src="https://www.youtube.com/embed/FyYHRPCrpMo"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </SwiperSlide>
-              <SwiperSlide>
-                <iframe
-                  className="w-[300px] h-[300px]  m-10"
-                  src="https://www.youtube.com/embed/btA7H5m6sIQ"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </SwiperSlide>
-              <SwiperSlide>
-                <iframe
-                  className="w-[300px] h-[300px]  m-10"
-                  src="https://www.youtube.com/embed/tyFfmFSAQwQ"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </SwiperSlide>
-            </Swiper>
+            <div className="flex gap-x-6 w-full justify-center items-center ">
+              <article className="text-white w-full  md:w-1/2">
+                Cloud Force sky bootcamp
+              </article>
+              <iframe
+                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+                src="https://www.youtube.com/embed/FyYHRPCrpMo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+            <div className="flex gap-x-6 w-full justify-center items-center ">
+              <article className="text-white w-full  md:w-1/2">
+      AWS user group part one
+              </article>
+              <iframe
+                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+                src="https://www.youtube.com/embed/9st7RVY7kdA"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+            <div className="flex gap-x-6 w-full justify-center items-center ">
+              <article className="text-white w-full  md:w-1/2">
+          AWS usergroup part two 
+              </article>
+              <iframe
+                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+               
+                src="https://www.youtube.com/embed/btA7H5m6sIQ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+            <div className="flex gap-x-6 w-full justify-center items-center ">
+              <article className="text-white w-full  md:w-1/2">
+                It Career sessions with Kevin 
+              </article>
+              <iframe
+                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+            
+                src="https://www.youtube.com/embed/tyFfmFSAQwQ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+
           </div>
 
           <div className=" grid place-items-center lg:hidden">
             <iframe
               className="w-[300px] h-[300px]  m-10"
-              src="https://www.youtube.com/embed/9st7RVY7kdA"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
             <iframe
               className="w-[300px] h-[300px]  m-10"
-              src="https://www.youtube.com/embed/btA7H5m6sIQ"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
@@ -620,7 +631,14 @@ function Home() {
                     href="#"
                     className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
                   >
-                    <a href="https://www.linkedin.com/pulse/azubi-africa-cloud-wave-james-juma-sindani" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 " target="_blank"> Read More  </a>
+                    <a
+                      href="https://www.linkedin.com/pulse/azubi-africa-cloud-wave-james-juma-sindani"
+                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
+                      target="_blank"
+                    >
+                      {" "}
+                      Read More{" "}
+                    </a>
 
                     <span className="ml-1 p-5 text-white">7 min read</span>
                   </span>
@@ -656,7 +674,13 @@ function Home() {
                     href="#"
                     className="py-1 text-sm font-regular text-white mr-1 flex flex-row justify-between items-center"
                   >
-              <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+                    <a
+                      href=""
+                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
+                    >
+                      {" "}
+                      Read More{" "}
+                    </a>
                     <span className="ml-1 p-5 text-white">4 mins read</span>
                   </span>
                 </div>
@@ -691,7 +715,13 @@ function Home() {
                     href="#"
                     className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
                   >
-                        <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+                    <a
+                      href=""
+                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
+                    >
+                      {" "}
+                      Read More{" "}
+                    </a>
 
                     <span className="ml-1 p-5 text-white">7 mins read</span>
                   </span>
@@ -803,7 +833,7 @@ function Home() {
             </div>
             <div className=" grid place-items-center w-full lg:w-1/2  z-60  lg:pr-20 ">
               <img
-                src="resource.JPG "
+                src="resource2.jpg"
                 className="w-full h-96 object-contain p-5"
                 alt=""
                 type="image/webp"
@@ -838,13 +868,19 @@ function Home() {
               hello, please feel free to reach out to me via email.
             </p>
             <button className="rounded-full w-full sm:w-1/3 shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
-              <a href="mailto:" className="bg-inherit"> Talk to me </a>
+              <a href="mailto:" className="bg-inherit">
+                {" "}
+                Talk to me{" "}
+              </a>
             </button>
 
             <div className="pt-20 lg:mt-20 bottom-0 ">
               <div className="w-full md-w-1/4 grid place-items-center bg-[#000006] ">
                 <div className="flex bg-[#000006] text-white text-3xl pb-10 gap-x-6">
-                  <a href="https://www.linkedin.com/in/james-juma-sindani/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/james-juma-sindani/"
+                    target="_blank"
+                  >
                     <p className="hover:scale-[2] hover:text-[#b5b0d8] ease-in duration-200 px-3 scale-150">
                       <AiFillLinkedin />
                     </p>
@@ -854,13 +890,15 @@ function Home() {
                       <AiOutlineTwitter />
                     </p>
                   </a>
-                  <a href="mailto:" >
+                  <a href="mailto:">
                     <p className="hover:scale-[2] hover:text-[#b5b0d8] ease-in duration-200 px-3 scale-150">
                       <AiOutlineMail />
                     </p>
                   </a>
                 </div>
-                <p className="text-white pt-5 bg-[#000006] pb-20 text-lg ">James Juma Sindani • © 2023</p>
+                <p className="text-white pt-5 bg-[#000006] pb-20 text-lg ">
+                  James Juma Sindani • © 2023
+                </p>
               </div>
             </div>
           </div>

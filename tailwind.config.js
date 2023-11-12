@@ -18,5 +18,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  variants: {
+    aspectRatio: ["responsive"],
+  },
+  plugins: [
+    require("tailwindcss-responsive-embed"),
+    require("tailwindcss-aspect-ratio"),
+  ],
 };

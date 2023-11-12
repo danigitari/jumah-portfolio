@@ -25,27 +25,41 @@ function Home() {
   const { ref, inView } = useInView();
   const [currentlyIntersecting, setCurrentlyIntersecting] = useState(false);
   useEffect(() => {
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-
-        // if (entry.isIntersecting) {
-        //   // console.log('I intersected')
-        //   setCurrentlyIntersecting(true);
-        // }
-        // else {
-        //   setCurrentlyIntersecting(false);
-        // }
-
-        entry.target.classList.toggle("intersecting", entry.isIntersecting);
-      }), {
-        threshold : 1
-
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("intersecting", entry.isIntersecting);
+        });
+      },
+      {
+        threshold: 1,
       }
+    );
+    const workDateObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "work_date_intersecting",
+          entry.isIntersecting
+        );
+      });
     });
 
+    const workDescriptionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(
+          "work_description_intersecting",
+          entry.isIntersecting
+        );
+      });
+    });
+
+    const workDates = document.querySelectorAll(".workdate");
+    workDates.forEach((el) => workDateObserver.observe(el));
+
+    const workDescription = document.querySelectorAll(".work_description");
+    workDescription.forEach((el) => workDescriptionObserver.observe(el));
+
     const Elements = document.querySelectorAll(".heading");
-    console.log(Elements)
     Elements.forEach((el) => observer.observe(el));
   }, []);
   return (
@@ -86,7 +100,7 @@ function Home() {
                   About
                 </Link>
                 <Link
-                  to=""
+                  to="blog"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -264,15 +278,15 @@ function Home() {
         </div>
 
         <div
-          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0 h-[110vh]"
+          className="grid pl-5 md:pl-20 bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0 h-full"
           id="about"
         >
           <div className="text-white text-3xl text-center justify-self-start sm:justify-self-center  py-5 font-bold heading w-36 mb-0 lg:mb-20">
             About Me
           </div>
           <div className="flex flex-col gap-x-10 lg:flex-row  h-full">
-            <div className="w-full lg:w-1/2 text-white pr-10 text-md font-light h-full">
-              <p>
+            <div className="w-full lg:w-1/2 text-white pr-10 text-md font-light workdate h-full">
+              <p className="p-5">
                 I am a passionate cloud enthusiast and AWS Solutions Architect
                 with a drive to shape the future through technology. Currently
                 working at Silicon Overdrive, I bring a wealth of experience in
@@ -288,7 +302,7 @@ function Home() {
                 enhance my expertise and stay at the forefront of cloud
                 technology.
               </p>
-              <button className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
+              <button className="rounded-full shadow-lg py-2 px-6 mx-5 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 ">
                 Download CV
               </button>
             </div>
@@ -302,7 +316,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
+        <div className="overflow-hidden  bg-[#000006] pt-20 h-full flex flex-col items-center max-w-screen translate-y-[200px] md:translate-y-0">
           <p
             className={` ${
               currentlyIntersecting ? " intersecting " : " "
@@ -312,11 +326,11 @@ function Home() {
           </p>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
-            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right workdate">
               June 2022 <p className="inline px-5 text-2xl font-bold  ">-</p>
               Present
             </div>
-            <div className=" text-white w-full text-lg font-semibold px-20">
+            <div className=" text-white w-full text-lg font-semibold px-20 work_description ">
               Cloud Solutions Architect -
               <p className="text-md font-light"> Silicon Overdrive</p>
               <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
@@ -342,11 +356,11 @@ function Home() {
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
-            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center workdate md:text-right">
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> Present
             </div>
-            <div className=" text-white w-full text-lg font-semibold px-20">
+            <div className=" text-white w-full text-lg font-semibold work_description px-20">
               Co-Founder & Partnership Manager -
               <p className="text-md font-light">
                 Resource Cloud Academy · Full-time
@@ -373,11 +387,11 @@ function Home() {
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
-            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center workdate md:text-right">
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
-            <div className=" pt-5 md:pt-10 text-white w-full  text-lg font-semibold px-20">
+            <div className=" pt-5 md:pt-10 text-white w-full work_description text-lg font-semibold px-20">
               Cloud Engineer -
               <p className="text-md font-light">
                 Spartec Consortium-Africa (SCA) Limited
@@ -413,11 +427,11 @@ function Home() {
           </div>
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca] "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center">
-            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md text-center md:text-right">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 pt-5 text-md workdate  text-center md:text-right">
               January 2022
               <p className="inline px-5 text-2xl font-bold  "> - </p> May 2022
             </div>
-            <div className=" pt-5 md:pt-10 text-white w-full text-lg font-semibold px-20">
+            <div className=" pt-5 md:pt-10 text-white w-full work_description text-lg font-semibold px-20">
               AWS Architect -
               <p className="text-md font-light">
                 Azubi Africa · Apprenticeship
@@ -451,7 +465,7 @@ function Home() {
           <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-56 mb-20">
             Certifications
           </div>
-          <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
+          {/* <div className="flex flex-wrap justify-center  gap-y-4 w-3/4">
             <img
               src="ccp.jpeg"
               className="object-contain h-48 md:h-56 w-full lg:w-1/3"
@@ -493,7 +507,7 @@ function Home() {
               alt=""
               type="image/webp"
             />
-          </div>
+          </div> */}
         </div>
         <div
           className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
@@ -565,12 +579,194 @@ function Home() {
           <div className=" mt-10 space-x-6 mx-20"></div>
         </div>
         <div
-          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
-          id="cerifications"
+          className=" grid  bg-[#000006] pt-20 translate-y-[200px] px-10 md:translate-y-0"
+          id="blog"
         >
-          <div className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading px-10 mb-20">
-            What People Say About Me
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-24 md:w-32 mb-5">
+            Blog
           </div>
+          <div className="container text-white my-24 mx-auto md:px-6  ">
+            <section className="mb-32 text-center ">
+              <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                  <img src="b1.jpg" className="w-full h-48" alt="" />
+
+                  <p className="text-lg text-start py-3 px-3">
+                    The Azubi Africa Cloud Wave
+                  </p>
+                  <p className="text-start px-3 text-sm">
+                    {" "}
+                    The cloud is a powerful tool that can help you accomplish
+                    your goals and missions. But it's not just about the
+                    technology—you need to understand how the cloud can fit into
+                    your business and what types of benefits are available. The
+                    cloud has different roles. These roles include Cloud
+                    Architect, AWS Solutions Architect, Cloud Engineer, and AWS
+                    Developer.
+                  </p>
+                  <div className="flex items-center">
+                    <img
+                      className="w-16 h-16 rounded-full mr-4 object-cover"
+                      src="jumah.png"
+                    />
+
+                    <div className="text-sm flex gap-x-6 text-white">
+                      <p className=" ">James Juma</p>
+                      <p className="text-gray-400">April 7, 2022</p>
+                    </div>
+                  </div>
+
+                  <span
+                    href="#"
+                    className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
+                  >
+                    <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+
+                    <span className="ml-1 p-5 text-white">7 min read</span>
+                  </span>
+                </div>
+                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                  <img src="b3.jpg" className="w-full h-48" alt="" />
+
+                  <p className="text-lg text-start py-3 px-3">
+                    Aws Cloud Roles
+                  </p>
+                  <p className="text-start px-3 text-sm">
+                    The cloud has changed how we work. It's no longer just a
+                    place where you can store your files. It's a tool that
+                    allows you to create and grow your business, from anywhere
+                    in the world. There are many different roles in AWS, and
+                    each of them plays a vital role in making sure that your
+                    organization is successful. But what does it mean to be a
+                    cloud architect?
+                  </p>
+                  <div className="flex items-center">
+                    <img
+                      className="w-16 h-16 rounded-full mr-4 object-cover"
+                      src="jumah.png"
+                    />
+
+                    <div className="text-sm flex gap-x-6 text-white">
+                      <p className=" ">James Juma</p>
+                      <p className="text-gray-400">Sep 25 2022</p>
+                    </div>
+                  </div>
+
+                  <span
+                    href="#"
+                    className="py-1 text-sm font-regular text-white mr-1 flex flex-row justify-between items-center"
+                  >
+              <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+                    <span className="ml-1 p-5 text-white">4 mins read</span>
+                  </span>
+                </div>
+                <div className="mb-12 md:mb-0 shadow-md shadow-gray-700 rounded-lg overflow-hidden">
+                  <img src="b2.jpg" className="w-full h-48" alt="" />
+
+                  <p className="text-lg text-start py-3 px-3">
+                    Traditional Monolithic vs 3-Tier Architectures
+                  </p>
+                  <p className="text-start px-3 text-sm">
+                    {" "}
+                    When it comes to building and deploying software, there are
+                    a variety of architectural patterns to choose from. One
+                    popular option is the 3-tier architecture, which is a
+                    variation of the traditional monolithic architecture. In
+                    this post, we'll discuss the two architectures, highlighting
+                    their pros and cons.
+                  </p>
+                  <div className="flex items-center">
+                    <img
+                      className="w-16 h-16 rounded-full mr-4 object-cover"
+                      src="jumah.png"
+                    />
+
+                    <div className="text-sm flex gap-x-6 text-white">
+                      <p className=" ">James Juma</p>
+                      <p className="text-gray-400">Jan 23 2023 </p>
+                    </div>
+                  </div>
+
+                  <span
+                    href="#"
+                    className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
+                  >
+                        <a href="" className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "> Read More  </a>
+
+                    <span className="ml-1 p-5 text-white">7 mins read</span>
+                  </span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div
+          className=" grid  bg-[#000006] pt-20 w-full translate-y-[200px] md:translate-y-0"
+          id="testimonials"
+        >
+          <p className="text-white text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading px-10 mb-20">
+            What People Say About Me
+          </p>
+
+          <article className="">
+            <div className="container text-white my-24 mx-auto md:px-6">
+              <section className="mb-32 text-center">
+                <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+                  <div className="mb-12 md:mb-0">
+                    <div className="mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                        className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                      />
+                    </div>
+                    <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                      Web Developer
+                    </h6>
+                    <p className="mb-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Quod eos id officiis hic tenetur quae quaerat ad velit ab
+                      hic.
+                    </p>
+                  </div>
+                  <div className="mb-12 md:mb-0">
+                    <div className="mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+                        className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                      />
+                    </div>
+                    <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                      Graphic Designer
+                    </h6>
+                    <p className="mb-4">
+                      Ut enim ad minima veniam, quis nostrum exercitationem
+                      ullam corporis suscipit laboriosam, nisi ut aliquid
+                      commodi.
+                    </p>
+                  </div>
+                  <div className="mb-0">
+                    <div className="mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+                        className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                      />
+                    </div>
+                    <h5 className="mb-2 text-lg font-bold">John Smith</h5>
+                    <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+                      Marketing Specialist
+                    </h6>
+                    <p className="mb-4">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </article>
         </div>
         <div
           className=" grid  bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0"
@@ -632,10 +828,10 @@ function Home() {
           id="contact"
         >
           <div className="w-full md:w-1/2 grid  place-items-center px-5">
-            <div className="text-white text-3xl text-center justify-self-center py-5 font-bold heading ">
+            <div className="text-white text-3xl text-center justify-self-center mb-10 font-bold heading ">
               GET IN TOUCH
             </div>
-            <p className="text-lg text-center text-white">
+            <p className="text-lg text-center mt-10 text-white">
               If you have any inquiries, collaborations, or simply want to
               connect, I would be delighted to hear from you. Whether you have a
               project in mind, a question about my work, or just want to say

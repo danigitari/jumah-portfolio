@@ -7,6 +7,7 @@
   font-family: "Sen", sans-serif;
   box-sizing: border-box;
   max-width: 100%;
+
 }
 
 .nav-title::after {
@@ -26,15 +27,46 @@
   @apply content-[''] bg-[#3e2cca]  h-[20px] w-[4px];
 }
 
-.intersecting {
-  @apply duration-1000 ease-in-out scale-[1.1] ;
+@media (prefers-reduced-motion){
+
 }
+.intersecting {
+  @apply duration-1000 ease-in-out  ;
+}
+
 .intersecting::after {
   @apply content-[''] bg-[#3e2cca] pt-1 h-[3px] flex justify-center duration-1000 ease-in-out w-full scale-x-110 mt-2;
 }
+
 
 .intersecting_section {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
   opacity: 1;
+}
+
+.workdate {
+  opacity: 0;
+  transition: all 1s ease;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.work_date_intersecting {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.work_description {
+  opacity: 0;
+  transition: all 1s ease;
+  filter: blur(5px);
+  transform: translateX(100%);
+}
+
+.work_description_intersecting {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
 }

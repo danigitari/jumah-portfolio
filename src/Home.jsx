@@ -689,7 +689,7 @@ function Home() {
                     className="py-1 text-sm font-regular text-white mr-1 flex flex-row justify-between items-center"
                   >
                     <a
-                      href=""
+                      href="https://www.linkedin.com/pulse/aws-cloud-roles-james-juma-sindani"
                       className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
                     >
                       {" "}
@@ -738,7 +738,8 @@ function Home() {
                     className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
                   >
                     <a
-                      href=""
+                      href="https://www.linkedin.com/pulse/traditional-monolithic-vs-3-tier-architectures-james-juma-sindani"
+                      targer="_blank"
                       className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
                     >
                       {" "}

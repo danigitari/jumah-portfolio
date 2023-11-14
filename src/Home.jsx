@@ -190,7 +190,7 @@ function Home() {
                 className="flex h-full right-0  pt-0 md:pt-10 bg-[#000006] "
               />
             </div>
-            <div className="flex md:hidden bg-[url('../public/jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
+            <div className="flex md:hidden bg-[url('/jumah3.png')] bg-center bg-[#000006] bg-no-repeat w-full h-full"></div>
           </div>
           <div className=" hidden md:block w-1/2 absolute  md:top-44 md:bg-transparent pl-5 md:pl-20 text-white text-2xl md:text-[44px] leading-4 md:leading-10 bg-[#181822] font-bold p-10 ">
             Hello
@@ -308,6 +308,7 @@ function Home() {
                 className="w-full h-[450px] object-contain "
                 alt=""
                 type="image/webp"
+                loading="lazy"
               />
             </div>
           </div>
@@ -513,53 +514,50 @@ function Home() {
             Talks I've Done
           </div>
           <div className="hidden lg:flex md:flex-wrap w-full">
-            <div className="flex gap-x-6 w-full justify-center items-center ">
-              <article className="text-white w-full  md:w-1/2">
+            <div className="flex gap-12 w-full justify-center items-center ">
+              <article className="text-white w-full p-10 flex items-center justify-center md:w-1/2">
                 Cloud Force sky bootcamp
               </article>
               <iframe
-                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+                className="w-[400px] h-[350px] rounded-lg overflow-hidden md:w-1/2 m-20 p-10"
                 src="https://www.youtube.com/embed/FyYHRPCrpMo"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
             </div>
-            <div className="flex gap-x-6 w-full justify-center items-center ">
-              <article className="text-white w-full  md:w-1/2">
-      AWS user group part one
+            <div className="flex gap-12 w-full justify-center items-center ">
+              <article className="text-white w-full p-10 flex items-center justify-center md:w-1/2">
+                AWS user group part one
               </article>
               <iframe
-                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
+                className="w-[400px] h-[350px] rounded-lg overflow-hidden  md:w-1/2 m-20 p-10"
                 src="https://www.youtube.com/embed/9st7RVY7kdA"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
             </div>
-            <div className="flex gap-x-6 w-full justify-center items-center ">
-              <article className="text-white w-full  md:w-1/2">
-          AWS usergroup part two 
+            <div className="flex gap-12 w-full justify-center items-center ">
+              <article className="text-white w-full p-10 flex items-center justify-center  md:w-1/2">
+                AWS usergroup part two
               </article>
               <iframe
-                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
-               
+                className="w-[400px] h-[350px] rounded-lg overflow-hidden  md:w-1/2 m-20 p-10"
                 src="https://www.youtube.com/embed/btA7H5m6sIQ"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
             </div>
-            <div className="flex gap-x-6 w-full justify-center items-center ">
-              <article className="text-white w-full  md:w-1/2">
-                It Career sessions with Kevin 
+            <div className="flex gap-12 w-full justify-center items-center ">
+              <article className="text-white w-full p-10 flex items-center justify-center md:w-1/2">
+                It Career sessions with Kevin
               </article>
               <iframe
-                className="w-[500px] h-[400px] rounded-lg overflow-hidden   m-10"
-            
+                className="w-[400px] h-[350px] rounded-lg overflow-hidden  md:w-1/2 m-20 p-10"
                 src="https://www.youtube.com/embed/tyFfmFSAQwQ"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
             </div>
-
           </div>
 
           <div className=" grid place-items-center lg:hidden">
@@ -593,14 +591,20 @@ function Home() {
           className=" grid  bg-[#000006] pt-20 translate-y-[200px] px-10 md:translate-y-0"
           id="blog"
         >
-          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-24 md:w-32 mb-5">
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-24 md:w-32  mb-5 ">
             Blog
           </div>
           <div className="container text-white my-24 mx-auto md:px-6  ">
             <section className="mb-32 text-center ">
-              <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
-                  <img src="b1.jpg" className="w-full h-48" alt="" />
+              <div className="grid gap-12 lg:grid-cols-3 lg:gap-x-12">
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+                  <img
+                    src="b1.jpg"
+                    type="image/webp"
+                    loading="lazy"
+                    className="w-full h-48"
+                    alt=""
+                  />
 
                   <p className="text-lg text-start py-3 px-3">
                     The Azubi Africa Cloud Wave
@@ -619,6 +623,8 @@ function Home() {
                     <img
                       className="w-16 h-16 rounded-full mr-4 object-cover"
                       src="jumah.png"
+                      type="image/webp"
+                      loading="lazy"
                     />
 
                     <div className="text-sm flex gap-x-6 text-white">
@@ -643,8 +649,14 @@ function Home() {
                     <span className="ml-1 p-5 text-white">7 min read</span>
                   </span>
                 </div>
-                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
-                  <img src="b3.jpg" className="w-full h-48" alt="" />
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+                  <img
+                    src="b3.jpg"
+                    type="image/webp"
+                    loading="lazy"
+                    className="w-full h-48"
+                    alt=""
+                  />
 
                   <p className="text-lg text-start py-3 px-3">
                     Aws Cloud Roles
@@ -662,6 +674,8 @@ function Home() {
                     <img
                       className="w-16 h-16 rounded-full mr-4 object-cover"
                       src="jumah.png"
+                      type="image/webp"
+                      loading="lazy"
                     />
 
                     <div className="text-sm flex gap-x-6 text-white">
@@ -684,8 +698,14 @@ function Home() {
                     <span className="ml-1 p-5 text-white">4 mins read</span>
                   </span>
                 </div>
-                <div className="mb-12 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
-                  <img src="b2.jpg" className="w-full h-48" alt="" />
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+                  <img
+                    src="b2.jpg"
+                    type="image/webp"
+                    loading="lazy"
+                    className="w-full h-48"
+                    alt=""
+                  />
 
                   <p className="text-lg text-start py-3 px-3">
                     Traditional Monolithic vs 3-Tier Architectures
@@ -703,6 +723,8 @@ function Home() {
                     <img
                       className="w-16 h-16 rounded-full mr-4 object-cover"
                       src="jumah.png"
+                      type="image/webp"
+                      loading="lazy"
                     />
 
                     <div className="text-sm flex gap-x-6 text-white">
@@ -741,53 +763,59 @@ function Home() {
           <article className="">
             <div className="container text-white my-24 mx-auto md:px-6">
               <section className="mb-32 text-center">
-                <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-                  <div className="mb-12 md:mb-0">
+                <div className="grid gap-12 md:grid-cols-3 lg:gap-12">
+                  <div className=" mb-5 md:mb-0 shadow-md shadow-gray-700  rounded-md overflow-hidden ">
                     <div className="mb-6 flex justify-center">
                       <img
                         src="/sam.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                        type="image/webp"
+                        loading="lazy"
                       />
                     </div>
                     <h5 className="mb-2 text-lg font-bold">Samson Wanjala</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
                       Technical Consultant @ BUI
                     </h6>
-                    <p className="mb-4">
+                    <p className="mb-4 px-5 pb-4 text-sm">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Quod eos id officiis hic tenetur quae quaerat ad velit ab
                       hic.
                     </p>
                   </div>
-                  <div className="mb-12 md:mb-0">
+                  <div className=" mb-5 md:mb-0 shadow-md shadow-gray-700  rounded-md overflow-hidden">
                     <div className="mb-6 flex justify-center">
                       <img
                         src="/albert.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                        type="image/webp"
+                        loading="lazy"
                       />
                     </div>
                     <h5 className="mb-2 text-lg font-bold">Albert Sitati</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
                       Cloud Engineer @ BUI
                     </h6>
-                    <p className="mb-4">
+                    <p className="mb-4 px-5 pb-4 text-sm">
                       Ut enim ad minima veniam, quis nostrum exercitationem
                       ullam corporis suscipit laboriosam, nisi ut aliquid
                       commodi.
                     </p>
                   </div>
-                  <div className="mb-0">
-                    <div className="mb-6 flex justify-center">
+                  <div className="mb-0 shadow-md shadow-gray-700  rounded-md overflow-hidden ">
+                    <div className="mb-6 flex justify-center ">
                       <img
                         src="/awadh.jpeg"
                         className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                        type="image/webp"
+                        loading="lazy"
                       />
                     </div>
                     <h5 className="mb-2 text-lg font-bold">Awadh Said</h5>
                     <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
                       Software Developer @ Kindred
                     </h6>
-                    <p className="mb-4">
+                    <p className="mb-4 px-5 pb-4 text-sm">
                       At vero eos et accusamus et iusto odio dignissimos ducimus
                       qui blanditiis praesentium voluptatum deleniti atque
                       corrupti.
@@ -802,7 +830,7 @@ function Home() {
           className=" grid  bg-[#000006] pt-20 translate-y-[200px] md:translate-y-0"
           id="rca"
         >
-          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96 mb-5">
+          <div className="text-white text-xl md:text-3xl text-center justify-self-center row-span-1 py-5 font-bold heading w-64 md:w-96  mb-5 ">
             Resource Cloud Academy
           </div>
           <div className="grid place-items-center">
@@ -837,20 +865,10 @@ function Home() {
                 className="w-full h-96 object-contain p-5"
                 alt=""
                 type="image/webp"
+                loading="lazy"
               />
             </div>
           </div>
-          {/* <div className="flex flex-col md:flex-row w-full ">
-            <div className="w-full md:w-1/2  z-60 pl-20 pr-10 pb-10 "></div>
-              <div className="w-full md:w-1/2  z-60 pl-20 pb-10 pr-10 ">
-                <img
-                  src="resource2.jpg"
-                  className="w-full h-96 object-contain "
-                  alt=""
-                  type="image/webp"
-                />
-              </div>
-            </div> */}
         </div>
         <div
           className="justify-center w-full grid place-items-center h-screen

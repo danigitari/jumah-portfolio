@@ -10,12 +10,12 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-scroll";
 import "./index.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/effect-flip";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import "swiper/css";
+// import "swiper/css/effect-flip";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -324,6 +324,35 @@ function Home() {
           <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
           <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
             <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right workdate">
+              Jan 2024 <p className="inline px-5 text-2xl font-bold  ">-</p>
+              Present
+            </div>
+            <div className=" text-white w-full text-lg font-semibold px-20 work_description ">
+               Cloud Solutions Architect -
+              <p className="text-md font-light"> Huawei </p>
+              <p className="text-sm font-light pt-10 text-gray-500 md:pr-20">
+              Influence existing customer's CXOs to quickly understand the value of Huawei Cloud and explore more opportunities
+                <br />
+                Participate in developing and implementing Huawei cloud business strategy
+                <br /> Create business opportunities based on the strategy and company business objectives
+                engage with clients by offering pre-sales assistance or advice
+                where needed.
+                <br />Implement specific actions on developing, nurturing, motivating, supporting, brand building, and providing technical support to customers in the region
+                <br />
+                Integrate internal and external resources, help customers to achieve goals effectively and create a win-win outcome with Huawei cloud.
+                <br />
+                <br /> <span className="font-bold text-white ">Skills </span>
+                <br />
+                <br />
+                <button className="px-6 py-1  rounded-full text-gray-300 bg-[#403a72]  ">
+                  Networking
+                </button>
+              </p>
+            </div>
+          </div>
+          <div className="w-3/4 h-[1px]  mt-10 bg-[#3e2cca]  "> .</div>
+          <div className="flex flex-col md:flex-row w-full gap-4 md:gap-16 items-center justify-center mt-10">
+            <div className=" text-[#c7c3e7] w-full md:w-2/3 text-md text-center md:text-right workdate">
               June 2022 <p className="inline px-5 text-2xl font-bold  ">-</p>
               Present
             </div>
@@ -596,8 +625,8 @@ function Home() {
           </div>
           <div className="container text-white my-24 mx-auto md:px-6  ">
             <section className="mb-32 text-center ">
-              <div className="grid gap-12 lg:grid-cols-3 lg:gap-x-12">
-                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+              <div className="grid gap-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3 lg:gap-x-12">
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-[1.05]  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img
                     src="b1.jpg"
                     type="image/webp"
@@ -639,7 +668,7 @@ function Home() {
                   >
                     <a
                       href="https://www.linkedin.com/pulse/azubi-africa-cloud-wave-james-juma-sindani"
-                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
+                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.05] hover:bg-blue-500 ease-in duration-500 mx-5 "
                       target="_blank"
                     >
                       {" "}
@@ -649,7 +678,7 @@ function Home() {
                     <span className="ml-1 p-5 text-white">7 min read</span>
                   </span>
                 </div>
-                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-[1.05]  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img
                     src="b3.jpg"
                     type="image/webp"
@@ -690,7 +719,7 @@ function Home() {
                   >
                     <a
                       href="https://www.linkedin.com/pulse/aws-cloud-roles-james-juma-sindani"
-                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.1] hover:bg-blue-500 ease-in duration-300 mx-5 "
+                      className="rounded-full shadow-lg py-2 px-6 text-white bg-[#3e2cca] mt-10 mb-10 hover:scale-[1.05] hover:bg-blue-500 ease-in duration-500 mx-5 "
                     >
                       {" "}
                       Read More{" "}
@@ -698,7 +727,7 @@ function Home() {
                     <span className="ml-1 p-5 text-white">4 mins read</span>
                   </span>
                 </div>
-                <div className=" mb-5 md:mb-0 shadow-md hover:scale-110  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
+                <div className=" mb-5 md:mb-0 shadow-md hover:scale-[1.05]  duration-500 ease-in shadow-gray-700 rounded-lg overflow-hidden">
                   <img
                     src="b2.jpg"
                     type="image/webp"
